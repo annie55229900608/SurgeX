@@ -398,13 +398,13 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 
 /* ── TUTORIAL SPOTLIGHT ── */
-.tut-overlay{position:fixed;inset:0;background:rgba(20,10,40,0.68);z-index:350;pointer-events:none;transition:opacity .3s;}
+.tut-overlay{position:fixed;inset:0;background:rgba(10,5,15,0.72);z-index:350;pointer-events:none;transition:opacity .3s;}
 .tut-tooltip{position:fixed;bottom:88px;left:14px;right:14px;background:#2E2E2E;border:1px solid #404040;border-radius:20px;
   padding:20px 20px 16px;z-index:402;box-shadow:0 10px 40px rgba(0,0,0,0.25);
   animation:slideUp .3s ease;pointer-events:auto;}
 .tut-highlight{position:relative;z-index:360!important;
-  box-shadow:0 0 0 3px #FF4444, 0 0 0 6px rgba(155,128,200,0.3), 0 8px 32px rgba(122,95,172,0.4)!important;
-  border-radius:14px!important;animation:tutGlow 1.6s ease infinite;}
+  box-shadow:0 0 0 3px #E63946, 0 0 0 8px rgba(230,57,70,0.25), 0 8px 32px rgba(200,0,0,0.5)!important;
+  border-radius:12px!important;animation:tutGlow 1.6s ease infinite;}
 @keyframes tutGlow{0%,100%{box-shadow:0 0 0 3px #FF4444, 0 0 0 6px rgba(155,128,200,0.3);}
   50%{box-shadow:0 0 0 4px #E63946, 0 0 0 10px rgba(122,95,172,0.25), 0 12px 36px rgba(122,95,172,0.45);}}
 
@@ -2773,12 +2773,12 @@ function showLevelUp(lv){
 
 // ══ TUTORIAL ══
 const TUTORIAL_STEPS=[
-  {e:'⚡',t:'欢迎使用 SurgeX',d:'你的高强度训练记录工具。\\n点下一步快速认识所有功能！',tab:'home',target:null},
-  {e:'🏋️',t:'重训记录',d:'选择動作分類（肩背胸/臀腿/核心）\\n展开動作→输入重量→记录這组\\n完成後点「储存训练记录」',tab:'home',target:'catTabs'},
-  {e:'🔥',t:'打勾才算完成',d:'储存後手動打勾周计划的每個项目\\n全部打勾才计入训练次数和 kcal',tab:'home',target:'wkDayTabs'},
-  {e:'🥩',t:'饮食追踪',d:'搜寻食物後按「＋」加入今日饮食\\n追踪蛋白质攝取',tab:'diet',target:'fsearch'},
-  {e:'📋',t:'自订食物',d:'点「+ 新增」加入自己的饮食\\n输入名称和热量即可储存',tab:'diet',target:'saveFoodForm'},
-  {e:'🏆',t:'开始冲刺！',d:'第一笔训练從現在开始。\\n右上角燈泡可隨時重看导览',tab:'home',target:null},
+  {e:'⚡',t:'欢迎使用 SurgeX',d:'你的高强度训练记录工具，点下一步快速认识所有功能！',tab:'home',target:null},
+  {e:'🏋️',t:'重训记录',d:'选择動作分類（肩背胸/臀腿/核心），展开動作→输入重量→记录這组，完成後点「储存训练记录」',tab:'home',target:'catTabs'},
+  {e:'🔥',t:'打勾才算完成',d:'储存後手動打勾周计划的每個项目，全部打勾才计入训练次数和 kcal',tab:'home',target:'wkDayTabs'},
+  {e:'🥩',t:'饮食追踪',d:'搜寻食物後按「＋」加入今日饮食，追踪蛋白质攝取',tab:'diet',target:'fsearch'},
+  {e:'📋',t:'自订食物',d:'点「+ 新增」加入自己的饮食，输入名称和热量即可储存',tab:'diet',target:'saveFoodForm'},
+  {e:'🏆',t:'开始冲刺！',d:'第一笔训练從現在开始。，右上角燈泡可隨時重看导览',tab:'home',target:null},
 ];
 let tutStep=0;
 
@@ -2813,9 +2813,18 @@ function renderTutSpotlight(){
     setTimeout(()=>{
       const el=document.getElementById(s.target);
       if(el){
+        // Remove old parent elevation
+        document.querySelectorAll('[data-tut-elevated]').forEach(p=>{p.style.zIndex='';p.style.position='';delete p.dataset.tutElevated;});
         tutHighlightEl=el;
         el.classList.add('tut-highlight');
         el.scrollIntoView({behavior:'smooth',block:'center'});
+        // Elevate parent chain above overlay
+        let p=el.parentElement;
+        while(p&&p!==document.body){
+          const z=parseInt(window.getComputedStyle(p).zIndex)||0;
+          if(z<360){p.style.zIndex='361';p.style.position=p.style.position||'relative';p.dataset.tutElevated='1';}
+          p=p.parentElement;
+        }
       }
     },300);
   }
