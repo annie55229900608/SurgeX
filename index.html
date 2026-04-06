@@ -21,17 +21,17 @@
   --sh:0 4px 20px rgba(230,57,70,0.18);--r:14px;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-spacing:0.012em;min-height:100vh;color:#E0E0E0;padding-bottom:80px;}
+body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-spacing:1px;min-height:100vh;color:#E0E0E0;padding-bottom:80px;}
 
 /* ── HEADER ── */
 .hdr{background:linear-gradient(135deg,#1A0A0A 0%,#6B0000 50%,#E63946 100%);padding:18px 18px 50px;position:relative;overflow:hidden;}
 .hdr::before{content:'';position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:rgba(230,57,70,0.15);border-radius:50%;}
 .hdr::after{content:'';position:absolute;bottom:-24px;left:14px;width:90px;height:90px;background:rgba(200,0,0,0.1);border-radius:50%;}
 .hdr-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;font-style:italic;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.12);letter-spacing:0.06em;}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;font-style:italic;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.12);letter-spacing:1px;}
 .nametag{color:#fff;font-weight:800;font-size:0.8rem;background:rgba(255,255,255,0.26);padding:5px 11px;border-radius:18px;border:none;cursor:pointer;font-family:'Nunito',sans-serif;}
 .hdr-info{position:relative;z-index:1;margin-top:8px;}
-.streak-txt{color:rgba(240,220,200,0.9);font-size:0.76rem;font-weight:600;margin-bottom:10px;letter-spacing:.05em;line-height:1.8;}
+.streak-txt{color:rgba(240,220,200,0.9);font-size:0.76rem;font-weight:600;margin-bottom:10px;letter-spacing:1px;line-height:1.8;}
 .xp-row{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
 .xp-lbl{color:rgba(240,230,220,0.95);font-size:0.72rem;font-weight:800;white-space:nowrap;}
 .xp-bar{flex:1;height:7px;background:rgba(255,0,0,0.2);border-radius:7px;overflow:hidden;}
@@ -45,7 +45,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 /* ── CARD ── */
 .card{background:linear-gradient(160deg,#181818 0%,#1E0A08 100%);border-radius:var(--r);box-shadow:0 4px 20px rgba(0,0,0,0.5);padding:14px;margin:0 12px 12px;border:1px solid #2A1818;}
 .ct{font-weight:800;font-size:0.92rem;color:#E0E0E0;margin-bottom:10px;}
-.section-label{font-size:0.72rem;font-weight:800;color:#888888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;margin-top:12px;}
+.section-label{font-size:0.72rem;font-weight:800;color:#888888;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;margin-top:12px;}
 .section-label:first-child{margin-top:0;}
 
 /* ── NAV ── */
@@ -316,18 +316,18 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   padding:32px;text-align:center;transition:opacity 1s ease;}
 .welcome-overlay.hiding{opacity:0;pointer-events:none;}
 .wel-logo{font-family:'Cormorant Garamond',serif;font-size:3.2rem;font-weight:300;font-style:italic;
-  color:#fff;letter-spacing:.1em;margin-bottom:8px;text-shadow:0 4px 30px rgba(0,0,0,0.4);}
-.wel-sub{font-size:0.78rem;font-weight:700;color:rgba(255,255,255,0.55);letter-spacing:.22em;
+  color:#fff;letter-spacing:1px;margin-bottom:8px;text-shadow:0 4px 30px rgba(0,0,0,0.4);}
+.wel-sub{font-size:0.78rem;font-weight:700;color:rgba(255,255,255,0.55);letter-spacing:1px;
   text-transform:uppercase;margin-bottom:0;}
 .wel-input{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.35);
   border-radius:14px;padding:16px 20px;font-family:'Cormorant Garamond',serif;font-style:italic;
   font-size:1.5rem;font-weight:400;color:#fff;outline:none;width:100%;
-  text-align:center;letter-spacing:.04em;backdrop-filter:blur(8px);transition:border-color .3s;}
+  text-align:center;letter-spacing:1px;backdrop-filter:blur(8px);transition:border-color .3s;}
 .wel-input::placeholder{color:rgba(255,255,255,0.3);}
 .wel-input:focus{border-color:rgba(255,255,255,0.7);}
 .wel-btn{margin-top:0;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.4);
   color:#fff;border-radius:50px;padding:13px 44px;font-family:'Nunito',sans-serif;font-weight:800;
-  font-size:0.88rem;cursor:pointer;letter-spacing:.1em;backdrop-filter:blur(8px);transition:all .2s;}
+  font-size:0.88rem;cursor:pointer;letter-spacing:1px;backdrop-filter:blur(8px);transition:all .2s;}
 .wel-btn:hover{background:rgba(255,255,255,0.28);border-color:rgba(255,255,255,0.7);}
 .wel-deco{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,0.06);}
 .wel-deco1{top:-80px;right:-80px;width:380px;height:380px;}
@@ -336,7 +336,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   border-color:rgba(255,255,255,0.03);animation:welRotate 20s linear infinite;}
 @keyframes welFadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes welNamePop{
-  0%{opacity:0;transform:scale(.7)letter-spacing:.5em}
+  0%{opacity:0;transform:scale(.7)letter-spacing:1px}
   60%{opacity:1;transform:scale(1.04)}
   100%{transform:scale(1)}
 }
@@ -356,7 +356,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .mcard::after{content:'';position:absolute;bottom:-20px;left:-20px;width:80px;height:80px;
   background:rgba(255,255,255,0.10);border-radius:50%;}
 .mcard-greeting{font-size:0.7rem;font-weight:800;color:rgba(255,255,255,0.8);
-  letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px;position:relative;z-index:1;}
+  letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;position:relative;z-index:1;}
 .mcard-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.6rem;
   font-weight:300;color:#fff;margin-bottom:6px;position:relative;z-index:1;line-height:1.2;}
 .mcard-quote{font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.85);
@@ -420,18 +420,18 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   <div class="wel-deco wel-deco2"></div>
   <div class="wel-deco wel-deco3"></div>
   <div id="welStep1" style="text-align:center;animation:welFadeIn 1.2s ease forwards;cursor:pointer" onclick="welNext()">
-    <div class="wel-logo" style="font-size:3rem;margin-bottom:10px;letter-spacing:.12em">SURGEX</div>
-    <div class="wel-sub" style="margin-bottom:0;letter-spacing:.3em">SURGE BEYOND LIMITS</div>
+    <div class="wel-logo" style="font-size:3rem;margin-bottom:10px;letter-spacing:1px">SURGEX</div>
+    <div class="wel-sub" style="margin-bottom:0;letter-spacing:1px">SURGE BEYOND LIMITS</div>
   </div>
   <div id="welStep2" style="display:none;text-align:center;width:100%;max-width:340px;animation:welFadeIn .8s ease forwards">
-    <div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.55);letter-spacing:.18em;text-transform:uppercase;margin-bottom:28px">每一個突破，從此刻開始</div>
+    <div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.55);letter-spacing:1px;text-transform:uppercase;margin-bottom:28px">每一個突破，從此刻开始</div>
     <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;font-weight:300;color:rgba(255,255,255,0.9);margin-bottom:20px">你的名字是？</div>
-    <input class="wel-input" id="welNameInput" placeholder="輸入你的名字…" maxlength="20" style="font-size:1.5rem;padding:16px 20px">
+    <input class="wel-input" id="welNameInput" placeholder="输入你的名字…" maxlength="20" style="font-size:1.5rem;padding:16px 20px">
     <div id="welHint" style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-top:10px;font-weight:600;min-height:18px"></div>
-    <button class="wel-btn" id="welConfirmBtn" onclick="welcomeSubmit()" style="margin-top:24px">確認</button>
+    <button class="wel-btn" id="welConfirmBtn" onclick="welcomeSubmit()" style="margin-top:24px">确认</button>
   </div>
   <div id="welStep3" style="display:none;text-align:center;animation:welFadeIn .8s ease forwards">
-    <div style="font-size:0.72rem;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px">Welcome</div>
+    <div style="font-size:0.72rem;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px">Welcome</div>
     <div id="welNameReveal" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;color:#fff;line-height:1;margin-bottom:20px;animation:welNamePop .6s cubic-bezier(.34,1.56,.64,1) forwards"></div>
     <div style="width:40px;height:1px;background:rgba(255,255,255,0.3);margin:0 auto 20px"></div>
     <div id="welCeremonyText" style="font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.7);line-height:1.7;max-width:260px;animation:welFadeIn 1s ease .4s both"></div>
@@ -450,16 +450,16 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <!-- HEADER -->
 <div class="hdr">
   <div class="hdr-top">
-    <div class="logo" style="font-size:1rem;letter-spacing:.18em;opacity:0.8">SURGEX</div>
+    <div class="logo" style="font-size:1rem;letter-spacing:1px;opacity:0.8">SURGEX</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <button onclick="showTutorial()" style="background:rgba(255,255,255,0.2);border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center" title="功能導覽">💡</button>
+      <button onclick="showTutorial()" style="background:rgba(255,255,255,0.2);border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center" title="功能导览">💡</button>
       <button class="nametag" id="nameBtn" onclick="openNameMo()" style="font-size:1rem;padding:5px 10px;opacity:0.75">👤</button>
     </div>
   </div>
   <div class="hdr-info">
     <div style="position:relative;z-index:1;margin-bottom:5px">
-      <div id="hdrGreeting" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.7rem;font-weight:300;color:#fff;line-height:1.5;letter-spacing:.06em;margin-bottom:6px"></div>
-      <div class="streak-txt" id="streakTxt" style="margin-top:3px">今天開始訓練吧！</div>
+      <div id="hdrGreeting" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.7rem;font-weight:300;color:#fff;line-height:1.5;letter-spacing:1px;margin-bottom:6px"></div>
+      <div class="streak-txt" id="streakTxt" style="margin-top:3px">今天开始训练吧！</div>
     </div>
     <div class="xp-row">
       <div class="xp-lbl" id="lvlLbl">Lv.1 健身新手</div>
@@ -468,8 +468,8 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     </div>
   </div>
   <div class="hdr-stats" style="grid-template-columns:1fr 1fr">
-    <div class="hs"><div class="hs-v" id="hW">0</div><div class="hs-l">總訓練次</div></div>
-    <div class="hs"><div class="hs-v" id="hK">0</div><div class="hs-l">本週 kcal</div></div>
+    <div class="hs"><div class="hs-v" id="hW">0</div><div class="hs-l">总训练次</div></div>
+    <div class="hs"><div class="hs-v" id="hK">0</div><div class="hs-l">本周 kcal</div></div>
   </div>
 </div>
 
@@ -486,7 +486,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   <!-- Week todo-style -->
   <div class="card" style="padding:14px 14px 10px">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
-      <div class="ct" style="margin:0">本週計劃</div>
+      <div class="ct" style="margin:0">本周计划</div>
       <div id="wkSum" style="font-size:0.72rem;color:#888888;font-weight:700"></div>
     </div>
     <div style="display:flex;gap:5px;margin-bottom:12px" id="wkDayTabs"></div>
@@ -496,9 +496,9 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   <!-- WEIGHT TRAINING -->
   <div class="card">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-      <div class="ct" style="margin:0">重訓記錄</div>
+      <div class="ct" style="margin:0">重训记录</div>
       <div style="display:flex;align-items:center;gap:6px">
-        <span style="font-size:0.7rem;font-weight:700;color:#888888">時長</span>
+        <span style="font-size:0.7rem;font-weight:700;color:#888888">時长</span>
         <select id="wtDur" class="mini-select" onchange="updateAllKcal()">
           <option value="30">30分</option>
           <option value="60" selected>60分</option>
@@ -514,7 +514,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <!-- weight training kcal estimate -->
     <!-- weight training kcal estimate -->
     <div id="weightKcal" style="display:none;margin-top:8px" class="kcal-row">
-      <div><div class="kcal-row-lbl">重訓預估消耗</div><div class="kcal-row-sub" id="weightKcalDetail"></div></div>
+      <div><div class="kcal-row-lbl">重训預估消耗</div><div class="kcal-row-sub" id="weightKcalDetail"></div></div>
       <div style="text-align:right">
         <div class="kcal-row-val" id="weightKcalVal">0</div>
         <div class="kcal-row-sub">kcal</div>
@@ -530,7 +530,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
       <div style="background:#1A1A1A;border-radius:10px;padding:9px 14px;font-size:0.8rem;font-weight:700;color:#E8E0D8;display:flex;align-items:center;gap:6px;flex-shrink:0">
         <span id="saveTargetLabel">今天</span>
       </div>
-      <button class="btn" style="margin-top:0;flex:1" onclick="finishToday()">儲存訓練記錄</button>
+      <button class="btn" style="margin-top:0;flex:1" onclick="finishToday()">储存训练记录</button>
     </div>
   </div>
 </div>
@@ -551,7 +551,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <div id="calDC"></div>
   </div>
   <div class="card">
-    <div class="ct">訓練日誌</div>
+    <div class="ct">训练日志</div>
     <div class="llist" id="logList"></div>
   </div>
 </div>
@@ -559,7 +559,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <!-- ══ DIET & BODY ══ -->
 <div class="pg" id="pg-diet">
   <div class="card">
-    <div class="ct">今日飲水</div>
+    <div class="ct">今日饮水</div>
     <select class="water-select" id="waterSel" onchange="setWater(this.value)">
       <option value="0">0 ml</option>
       <option value="250">250 ml（1杯）</option>
@@ -569,39 +569,39 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
       <option value="1250">1250 ml（5杯）</option>
       <option value="1500">1500 ml（6杯）</option>
       <option value="1750">1750 ml（7杯）</option>
-      <option value="2000">2000 ml — 達標</option>
+      <option value="2000">2000 ml — 达标</option>
       <option value="2500">2500 ml</option>
-      <option value="3000">3000 ml — 超標</option>
+      <option value="3000">3000 ml — 超标</option>
     </select>
     <div style="display:flex;align-items:center;gap:8px;margin-top:8px">
       <span style="font-size:1.3rem;font-weight:900;color:#BBBBBB" id="waterDisplay">0 ml</span>
-      <span style="font-size:0.7rem;color:#888888;font-weight:600">/ 目標 <span id="waterGoalLbl">2000</span> ml</span>
+      <span style="font-size:0.7rem;color:#888888;font-weight:600">/ 目标 <span id="waterGoalLbl">2000</span> ml</span>
     </div>
     <div class="wb"><div class="wbf" id="waterFill" style="width:0%"></div></div>
   </div>
 
   <div class="card">
-    <div class="ct">今日飲食</div>
+    <div class="ct">今日饮食</div>
     <div class="macro-bar">
       <div class="macro-item"><div class="macro-val" id="mKcal">0</div><div class="macro-lbl">大卡</div></div>
-      <div class="macro-item blue"><div class="macro-val" id="mPro">0g</div><div class="macro-lbl">蛋白質</div></div>
+      <div class="macro-item blue"><div class="macro-val" id="mPro">0g</div><div class="macro-lbl">蛋白质</div></div>
       <div class="macro-item green"><div class="macro-val" id="mCarb">0g</div><div class="macro-lbl">碳水</div></div>
     </div>
     <div class="cal-prog-row">
       <div class="cal-prog-bar"><div class="cal-prog-fill" id="calBar" style="width:0%"></div></div>
-      <span style="font-size:0.7rem;font-weight:700;color:#888888">目標 <span id="calGoalLbl" style="color:#E8E0D8">1800</span> kcal</span>
+      <span style="font-size:0.7rem;font-weight:700;color:#888888">目标 <span id="calGoalLbl" style="color:#E8E0D8">1800</span> kcal</span>
     </div>
 
     <!-- Food search -->
     <div class="fswrap" id="foodSearchWrap">
-      <input class="fsearch" id="fsearch" placeholder="搜尋食物，例：雞胸肉、高蛋白粉..." autocomplete="off">
+      <input class="fsearch" id="fsearch" placeholder="搜寻食物，例：雞胸肉、高蛋白粉..." autocomplete="off">
       <div class="fdrop" id="fdrop"></div>
     </div>
     <!-- Add row: name | kcal | servings | + -->
     <div class="fadd-row">
       <div>
-        <input class="fadd-input" id="cFood" placeholder="食物名稱">
-        <div class="fadd-lbl">食物名稱</div>
+        <input class="fadd-input" id="cFood" placeholder="食物名称">
+        <div class="fadd-lbl">食物名称</div>
       </div>
       <div>
         <input class="fadd-input" id="cCal" type="number" placeholder="大卡">
@@ -609,7 +609,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
       </div>
       <div>
         <input class="fadd-input" id="cServ" type="number" value="1" min="0.5" step="0.5" placeholder="份">
-        <div class="fadd-lbl">份數</div>
+        <div class="fadd-lbl">份数</div>
       </div>
       <button class="fadd-btn" onclick="addFood()">＋</button>
     </div>
@@ -621,28 +621,28 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <div id="quickFoods" style="display:flex;align-items:center;justify-content:space-between">
       <div class="ct" style="margin:0">常吃食物</div>
       <div style="display:flex;gap:6px">
-        <button onclick="openFoodEditMo()" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:5px 11px;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer;color:#FFFFFF">編輯</button>
+        <button onclick="openFoodEditMo()" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:5px 11px;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer;color:#FFFFFF">编辑</button>
         <button onclick="toggleSaveFoodForm()" style="background:#1A1A1A;border:none;border-radius:8px;padding:5px 11px;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer;color:#E8E0D8">＋ 新增</button>
       </div>
     </div>
     <div class="save-food-form" id="saveFoodForm" style="display:none;margin-top:10px">
       <div class="save-food-grid">
-        <div><div class="save-food-lbl">食物名稱</div><input class="save-food-input" id="sfName" placeholder="例：自家滷雞腿"></div>
+        <div><div class="save-food-lbl">食物名称</div><input class="save-food-input" id="sfName" placeholder="例：自家滷雞腿"></div>
         <div><div class="save-food-lbl">大卡</div><input class="save-food-input" id="sfCal" type="number" placeholder="280"></div>
         <div><div class="save-food-lbl">蛋白(g)</div><input class="save-food-input" id="sfPro" type="number" placeholder="28"></div>
         <div><div class="save-food-lbl">碳水(g)</div><input class="save-food-input" id="sfCb" type="number" placeholder="3"></div>
       </div>
-      <button class="save-food-btn" style="width:100%;margin-top:8px" onclick="saveCustomFood()">儲存常吃食物</button>
+      <button class="save-food-btn" style="width:100%;margin-top:8px" onclick="saveCustomFood()">储存常吃食物</button>
     </div>
   </div>
 
   <div class="card">
-    <div class="ct">本週每日紀錄</div>
+    <div class="ct">本周每日纪录</div>
     <div style="overflow-x:auto"><table class="wdt" id="wdtEl"></table></div>
   </div>
 
   <div class="card">
-    <div class="ct">體重趨勢（近7日）</div>
+    <div class="ct">体重趨勢（近7日）</div>
     <div class="mchart" id="wtC"></div>
     <div style="display:flex;gap:10px;margin-top:6px;font-size:0.7rem;font-weight:700">
       <span style="color:#888888">均重</span><span id="avgW" style="color:#E8E0D8">--</span>
@@ -650,20 +650,20 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     </div>
   </div>
   <div class="card">
-    <div class="ct">體脂趨勢（近7日）</div>
+    <div class="ct">体脂趨勢（近7日）</div>
     <div class="mchart" id="ftC"></div>
     <div style="font-size:0.7rem;font-weight:700;color:#888888;margin-top:6px">
-      最新體脂 <span id="latF" style="color:#E8E0D8">-- %</span>
+      最新体脂 <span id="latF" style="color:#E8E0D8">-- %</span>
     </div>
   </div>
   <!-- Body stats input in diet tab -->
   <div class="card">
-    <div class="ct">體態記錄</div>
+    <div class="ct">体态记录</div>
     <div class="si-row" style="margin-bottom:8px">
-      <div class="si-wrap"><div class="si-lbl">體重 (kg)</div><input class="si" type="number" id="wInDiet" placeholder="60.0" step="0.1" oninput="syncWin(this.value)"></div>
-      <div class="si-wrap"><div class="si-lbl">體脂 (%)</div><input class="si" type="number" id="fIn" placeholder="20.0" step="0.1"></div>
+      <div class="si-wrap"><div class="si-lbl">体重 (kg)</div><input class="si" type="number" id="wInDiet" placeholder="60.0" step="0.1" oninput="syncWin(this.value)"></div>
+      <div class="si-wrap"><div class="si-lbl">体脂 (%)</div><input class="si" type="number" id="fIn" placeholder="20.0" step="0.1"></div>
     </div>
-    <button class="btn sec" onclick="saveBody()">儲存體重 / 體脂</button>
+    <button class="btn sec" onclick="saveBody()">储存体重 / 体脂</button>
   </div>
 </div>
 
@@ -675,18 +675,18 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   </div>
 
   <div class="card">
-    <div class="ct">個人資料</div>
+    <div class="ct">個人资料</div>
     <div style="display:flex;flex-direction:column;gap:8px">
       <div class="si-wrap"><div class="si-lbl">姓名</div><input class="si" id="pName" placeholder="你的名字"></div>
       <div class="si-row">
         <div class="si-wrap"><div class="si-lbl">身高 (cm)</div><input class="si" id="pH" type="number" placeholder="165"></div>
-        <div class="si-wrap"><div class="si-lbl">目標體重 (kg)</div><input class="si" id="pGW" type="number" placeholder="55"></div>
+        <div class="si-wrap"><div class="si-lbl">目标体重 (kg)</div><input class="si" id="pGW" type="number" placeholder="55"></div>
       </div>
       <div class="si-row">
-        <div class="si-wrap"><div class="si-lbl">每日卡路里目標</div><input class="si" id="pCal" type="number" placeholder="1800"></div>
-        <div class="si-wrap"><div class="si-lbl">飲水目標 (ml)</div><input class="si" id="pWt" type="number" placeholder="2000"></div>
+        <div class="si-wrap"><div class="si-lbl">每日卡路里目标</div><input class="si" id="pCal" type="number" placeholder="1800"></div>
+        <div class="si-wrap"><div class="si-lbl">饮水目标 (ml)</div><input class="si" id="pWt" type="number" placeholder="2000"></div>
       </div>
-      <button class="btn" onclick="saveProfile()">儲存</button>
+      <button class="btn" onclick="saveProfile()">储存</button>
     </div>
   </div>
   <div class="card" id="tipsCard">
@@ -697,9 +697,9 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 <!-- NAV -->
 <nav class="bnav" style="grid-template-columns:repeat(4,1fr)">
-  <button class="nb active" onclick="sw('home',this)"><span class="ni">⚔️</span><span class="nl">訓練</span></button>
-  <button class="nb" onclick="sw('diet',this)"><span class="ni">🔬</span><span class="nl">飲食體態</span></button>
-  <button class="nb" onclick="sw('cal',this)"><span class="ni">🏋️</span><span class="nl">月曆</span></button>
+  <button class="nb active" onclick="sw('home',this)"><span class="ni">⚔️</span><span class="nl">训练</span></button>
+  <button class="nb" onclick="sw('diet',this)"><span class="ni">🔬</span><span class="nl">饮食体态</span></button>
+  <button class="nb" onclick="sw('cal',this)"><span class="ni">🏋️</span><span class="nl">月历</span></button>
   <button class="nb" onclick="sw('me',this)"><span class="ni">🔥</span><span class="nl">我的</span></button>
 </nav>
 
@@ -709,11 +709,11 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <!-- NAME MODAL -->
 <div class="mo" id="nameMo">
   <div class="mbox">
-    <div class="mtit">輸入你的名字</div>
+    <div class="mtit">输入你的名字</div>
     <input class="minp" id="nameIn" placeholder="例：小美、健身俠...">
     <div class="mbtns">
       <button class="mbtn sc" onclick="closeMo('nameMo')">取消</button>
-      <button class="mbtn pri" onclick="saveName()">確認</button>
+      <button class="mbtn pri" onclick="saveName()">确认</button>
     </div>
   </div>
 </div>
@@ -721,16 +721,16 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <!-- DAY DETAIL MODAL -->
 <div class="mo" id="dayMo">
   <div class="mbox">
-    <div class="mtit" id="dayMoT">訓練詳情</div>
+    <div class="mtit" id="dayMoT">训练詳情</div>
     <div id="dayMoC"></div>
-    <button class="mbtn pri" onclick="closeMo('dayMo')" style="width:100%;margin-top:12px">關閉</button>
+    <button class="mbtn pri" onclick="closeMo('dayMo')" style="width:100%;margin-top:12px">关闭</button>
   </div>
 </div>
 
 <!-- ADD CUSTOM EXERCISE MODAL -->
 <div class="mo" id="addExMo">
   <div class="mbox">
-    <div class="mtit">新增自訂動作</div>
+    <div class="mtit">新增自订動作</div>
     <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:12px">
       <div>
         <div class="save-food-lbl">部位 / 分類</div>
@@ -740,16 +740,16 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
             <option value="臀腿">臀腿</option>
             <option value="核心">核心</option>
           </select>
-          <input class="save-food-input" id="exCatNew" placeholder="或輸入新部位" style="flex:1">
+          <input class="save-food-input" id="exCatNew" placeholder="或输入新部位" style="flex:1">
         </div>
       </div>
       <div>
-        <div class="save-food-lbl">動作名稱</div>
+        <div class="save-food-lbl">動作名称</div>
         <input class="save-food-input" id="exName" placeholder="例：蝴蝶機夾胸" style="width:100%;margin-top:4px">
       </div>
       <div>
-        <div class="save-food-lbl">鍛鍊肌群（選填）</div>
-        <input class="save-food-input" id="exMuscle" placeholder="例：胸大肌・三頭" style="width:100%;margin-top:4px">
+        <div class="save-food-lbl">锻鍊肌群（选填）</div>
+        <input class="save-food-input" id="exMuscle" placeholder="例：胸大肌・三头" style="width:100%;margin-top:4px">
       </div>
       <div>
         <div class="save-food-lbl">重量範圍</div>
@@ -769,13 +769,13 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
         </div>
         <div style="margin-top:5px;display:flex;align-items:center;gap:8px">
           <input type="checkbox" id="exBodywt" style="width:16px;height:16px">
-          <label for="exBodywt" style="font-size:0.78rem;font-weight:700;color:#888888">包含自體重量選項</label>
+          <label for="exBodywt" style="font-size:0.78rem;font-weight:700;color:#888888">包含自体重量选项</label>
         </div>
       </div>
     </div>
     <div class="mbtns">
       <button class="mbtn sc" onclick="closeMo('addExMo')">取消</button>
-      <button class="mbtn pri" onclick="saveCustomEx()">儲存動作</button>
+      <button class="mbtn pri" onclick="saveCustomEx()">储存動作</button>
     </div>
     <!-- Manage existing custom exercises -->
     <div id="customExList" style="margin-top:14px;border-top:1px solid var(--p3);padding-top:10px"></div>
@@ -785,34 +785,34 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <!-- FOOD EDIT MODAL -->
 <div class="mo" id="foodEditMo">
   <div class="mbox" style="background:linear-gradient(160deg,#141414 0%,#1C0808 100%);border:1px solid #2A1818;">
-    <div class="mtit">飲食資料庫管理</div>
+    <div class="mtit">饮食资料庫管理</div>
     <div style="display:flex;gap:6px;margin-bottom:10px">
       <button onclick="showFoodEditTab('custom')" id="feTabCustom" class="mbtn pri" style="flex:1;font-size:0.8rem">常吃食物</button>
       <button onclick="showFoodEditTab('builtin')" id="feTabBuiltin" class="mbtn sc" style="flex:1;font-size:0.8rem">內建食物</button>
     </div>
-    <input id="feSearch" placeholder="搜尋食物名稱..." style="width:100%;border:2px solid rgba(255,255,255,0.18);border-radius:9px;padding:8px 12px;font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;outline:none;margin-bottom:8px" oninput="filterFoodEdit(this.value)">
+    <input id="feSearch" placeholder="搜寻食物名称..." style="width:100%;border:2px solid rgba(255,255,255,0.18);border-radius:9px;padding:8px 12px;font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;outline:none;margin-bottom:8px" oninput="filterFoodEdit(this.value)">
     <div id="foodEditList" style="max-height:55vh;overflow-y:auto;display:flex;flex-direction:column;gap:4px"></div>
-    <button class="mbtn sc" onclick="closeMo('foodEditMo')" style="width:100%;margin-top:10px">關閉</button>
+    <button class="mbtn sc" onclick="closeMo('foodEditMo')" style="width:100%;margin-top:10px">关闭</button>
   </div>
 </div>
 
 <!-- FOOD EDIT SINGLE ITEM MODAL -->
 <div class="mo" id="foodItemEditMo">
   <div class="mbox">
-    <div class="mtit" id="feItemTitle">編輯食物</div>
+    <div class="mtit" id="feItemTitle">编辑食物</div>
     <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:12px">
-      <div><div class="save-food-lbl">食物名稱</div><input class="save-food-input" id="feItemName" style="width:100%;margin-top:4px"></div>
+      <div><div class="save-food-lbl">食物名称</div><input class="save-food-input" id="feItemName" style="width:100%;margin-top:4px"></div>
       <div class="save-food-grid">
         <div style="grid-column:1/-1"><div class="save-food-lbl">大卡</div><input class="save-food-input" id="feItemCal" type="number" style="width:100%;margin-top:4px"></div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div><div class="save-food-lbl">蛋白質 (g)</div><input class="save-food-input" id="feItemPro" type="number" style="width:100%;margin-top:4px"></div>
+        <div><div class="save-food-lbl">蛋白质 (g)</div><input class="save-food-input" id="feItemPro" type="number" style="width:100%;margin-top:4px"></div>
         <div><div class="save-food-lbl">碳水 (g)</div><input class="save-food-input" id="feItemCb" type="number" style="width:100%;margin-top:4px"></div>
       </div>
     </div>
     <div class="mbtns">
       <button class="mbtn sc" onclick="closeMo('foodItemEditMo')">取消</button>
-      <button class="mbtn pri" onclick="saveFoodItemEdit()">儲存</button>
+      <button class="mbtn pri" onclick="saveFoodItemEdit()">储存</button>
     </div>
   </div>
 </div>
@@ -824,11 +824,11 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <div style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:rgba(255,255,255,0.10);border-radius:50%"></div>
     <div style="position:absolute;bottom:-30px;left:-30px;width:120px;height:120px;background:rgba(255,255,255,0.10);border-radius:50%"></div>
     <!-- Logo -->
-    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;font-weight:300;color:rgba(255,255,255,0.6);letter-spacing:.12em;margin-bottom:16px;position:relative;z-index:1">Sovereign</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;font-weight:300;color:rgba(255,255,255,0.6);letter-spacing:1px;margin-bottom:16px;position:relative;z-index:1">Sovereign</div>
     <!-- User + date -->
     <div style="position:relative;z-index:1;margin-bottom:16px">
       <div id="shareCardName" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2.2rem;font-weight:300;color:#fff;line-height:1.1;margin-bottom:4px"></div>
-      <div id="shareCardDate" style="font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.65);letter-spacing:.08em;text-transform:uppercase"></div>
+      <div id="shareCardDate" style="font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.65);letter-spacing:1px;text-transform:uppercase"></div>
     </div>
     <!-- Stats -->
     <div id="shareCardStats" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;position:relative;z-index:1"></div>
@@ -839,7 +839,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   </div>
   <div style="display:flex;gap:8px;padding:12px 16px;background:#fff;width:100%;max-width:400px;border-radius:0 0 24px 24px">
     <button onclick="downloadShareCard()" style="flex:1;background:linear-gradient(135deg,#E63946,#FF4444);color:#fff;border:none;border-radius:11px;padding:12px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;cursor:pointer">下載圖片</button>
-    <button onclick="closeMo('shareMo')" style="background:rgba(255,255,255,0.10);color:#888888;border:none;border-radius:11px;padding:12px 16px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;cursor:pointer">關閉</button>
+    <button onclick="closeMo('shareMo')" style="background:rgba(255,255,255,0.10);color:#888888;border:none;border-radius:11px;padding:12px 16px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;cursor:pointer">关闭</button>
   </div>
 </div>
 
@@ -847,12 +847,12 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <div class="mo" id="dayCardMo">
   <div class="mbox" style="text-align:center;padding:24px 20px 20px;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;">
     <div id="dcEmoji" style="font-size:2.2rem;margin-bottom:10px">✨</div>
-    <div style="font-size:0.62rem;font-weight:800;color:#888888;letter-spacing:.15em;text-transform:uppercase;margin-bottom:4px">SurgeX · 訓練記錄</div>
-    <div id="dcName" style="font-size:1.6rem;font-weight:900;color:#E0E0E0;margin-bottom:2px;line-height:1.3;letter-spacing:.02em"></div>
+    <div style="font-size:0.62rem;font-weight:800;color:#888888;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">SurgeX · 训练记录</div>
+    <div id="dcName" style="font-size:1.6rem;font-weight:900;color:#E0E0E0;margin-bottom:2px;line-height:1.3;letter-spacing:1px"></div>
     <div id="dcDate" style="font-size:0.68rem;color:#888888;font-weight:600;margin-bottom:16px"></div>
     <div id="dcStats" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;max-width:280px;margin-left:auto;margin-right:auto"></div>
     <div id="dcSessions" style="text-align:left;margin-bottom:14px"></div>
-    <button class="mbtn pri" onclick="closeMo('dayCardMo')" style="width:100%">關閉</button>
+    <button class="mbtn pri" onclick="closeMo('dayCardMo')" style="width:100%">关闭</button>
   </div>
 </div>
 
@@ -897,12 +897,12 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <div class="mo" id="levelUpMo">
   <div class="mbox" style="text-align:center;padding:28px 22px 24px;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;">
     <div id="lvlUpEmoji" style="font-size:3rem;margin-bottom:6px">⭐</div>
-    <div style="font-size:0.65rem;font-weight:800;color:#888888;letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px">Level Up!</div>
+    <div style="font-size:0.65rem;font-weight:800;color:#888888;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px">Level Up!</div>
     <div id="lvlUpTitle" style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;font-style:italic;color:#E8E0D8;margin-bottom:4px;line-height:1.2"></div>
     <div id="lvlUpSub" style="font-size:0.82rem;font-weight:700;color:#E0E0E0;margin-bottom:8px"></div>
     <div id="lvlUpXP" style="font-size:0.76rem;font-weight:600;color:#888888;margin-bottom:18px"></div>
     <div id="lvlUpQuote" style="background:#1A1A1A;border-radius:12px;padding:12px 16px;font-size:0.82rem;font-weight:700;color:#E0E0E0;line-height:1.6;margin-bottom:18px;font-style:italic;border-left:3px solid #E63946"></div>
-    <button class="mbtn pri" onclick="closeMo('levelUpMo')" style="width:100%">繼續前進！</button>
+    <button class="mbtn pri" onclick="closeMo('levelUpMo')" style="width:100%">继续前進！</button>
   </div>
 </div>
 <!-- COMPLETION MODAL -->
@@ -917,7 +917,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <div id="completionSessions" style="text-align:left;margin-bottom:16px"></div>
     <!-- Motivational -->
     <div id="completionQuote" style="background:#1A1A1A;border-radius:12px;padding:12px;font-size:0.82rem;font-weight:700;color:#E0E0E0;line-height:1.6;font-style:italic;margin-bottom:14px;border-left:3px solid #E63946"></div>
-    <button class="mbtn pri" onclick="closeMo('completionMo')" style="width:100%">繼續加油！</button>
+    <button class="mbtn pri" onclick="closeMo('completionMo')" style="width:100%">继续加油！</button>
   </div>
 </div>
 
@@ -927,21 +927,21 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <script>
 // ══ FOOD DATABASE ══
 const FOOD_DB=[
-  // 蛋白質
+  // 蛋白质
   {n:'雞胸肉 100g',c:165,p:31,cb:0,ic:'🥩'},
   {n:'水煮蛋 1顆',c:78,p:6,cb:0.6,ic:'🥚'},
   {n:'希臘優格 150g',c:100,p:10,cb:8,ic:'🥛'},
   {n:'鮭魚 100g',c:208,p:20,cb:0,ic:'🐟'},
   {n:'豆腐 100g',c:76,p:8,cb:2,ic:'🌿'},
   {n:'牛肉 100g',c:250,p:26,cb:0,ic:'🥩'},
-  {n:'鮪魚罐頭 100g',c:116,p:26,cb:0,ic:'🐟'},
+  {n:'鮪魚罐头 100g',c:116,p:26,cb:0,ic:'🐟'},
   {n:'蝦仁 100g',c:99,p:24,cb:0,ic:'🦐'},
   {n:'豬里肌 100g',c:212,p:22,cb:0,ic:'🥩'},
   {n:'滷雞腿 1支',c:280,p:28,cb:3,ic:'🍗'},
   {n:'茶葉蛋 1顆',c:80,p:7,cb:1,ic:'🥚'},
   {n:'蒸蛋 1碗',c:80,p:8,cb:2,ic:'🥚'},
   {n:'滷豆干 100g',c:148,p:14,cb:8,ic:'🌿'},
-  // 蛋白補充品
+  // 蛋白补充品
   {n:'高蛋白粉 25g',c:99.9,p:20,cb:3,ic:'🥛'},
   // 碳水
   {n:'白飯 1碗(200g)',c:280,p:5,cb:62,ic:'🍚'},
@@ -954,7 +954,7 @@ const FOOD_DB=[
   {n:'拉麵 1碗',c:450,p:15,cb:65,ic:'🍜'},
   {n:'冬粉 100g(熟)',c:150,p:0.5,cb:37,ic:'🍜'},
   {n:'義大利麵 100g(熟)',c:158,p:6,cb:31,ic:'🍝'},
-  {n:'饅頭 1個',c:220,p:7,cb:44,ic:'🍞'},
+  {n:'饅头 1個',c:220,p:7,cb:44,ic:'🍞'},
   {n:'糙米飯 1碗(200g)',c:260,p:5,cb:55,ic:'🍚'},
   {n:'燕麥 40g',c:152,p:5,cb:27,ic:'🌾'},
   {n:'地瓜 100g',c:86,p:1.6,cb:20,ic:'🍠'},
@@ -970,7 +970,7 @@ const FOOD_DB=[
   {n:'番茄 1顆',c:22,p:1,cb:4.8,ic:'🍅'},
   {n:'小黃瓜 1根',c:16,p:0.6,cb:3.6,ic:'🥒'},
   {n:'酪梨 半顆',c:160,p:2,cb:8.5,ic:'🥑'},
-  // 飲品
+  // 饮品
   {n:'全脂牛奶 240ml',c:150,p:8,cb:12,ic:'🥛'},
   {n:'豆漿 240ml',c:100,p:7,cb:10,ic:'🥛'},
   {n:'無糖豆漿 240ml',c:70,p:7,cb:2,ic:'🥛'},
@@ -982,7 +982,7 @@ const FOOD_DB=[
 
 // MET-based kcal/min estimation (per 60kg person)
 const AMET={
-  '爬坡':0.13,'打羽球':0.11,'飛輪':0.14,'皮拉提斯':0.06,
+  '爬坡':0.13,'打羽球':0.11,'飞輪':0.14,'皮拉提斯':0.06,
 };
 // Exercise type classification for kcal estimation
 const EX_SVG={
@@ -1042,39 +1042,39 @@ const DZHT=['日','一','二','三','四','五','六'];
 // Built-in exercises
 const EX_BUILTIN={
   '肩背胸':[
-    {id:'bench',    n:'槓鈴平板臥推',    m:'胸大肌・三頭',       w:[20,30,40,50,60,70,80,90,100,110,120,130,140,160]},
-    {id:'incsmith', n:'上斜史密斯臥推',  m:'胸大肌上束',         w:[20,30,40,50,60,70,80,90,100,110,120]},
+    {id:'bench',    n:'杠铃平板卧推',    m:'胸大肌・三头',       w:[20,30,40,50,60,70,80,90,100,110,120,130,140,160]},
+    {id:'incsmith', n:'上斜史密斯卧推',  m:'胸大肌上束',         w:[20,30,40,50,60,70,80,90,100,110,120]},
     {id:'chestpr',  n:'胸推',            m:'胸大肌',             w:[20,30,40,50,60,70,80,100,120,140,160]},
     {id:'shpress',  n:'肩推',            m:'三角肌前・中束',      w:[10,15,20,30,40,50,60,70,80,90,100]},
-    {id:'dbpress',  n:'坐姿啞鈴推舉',    m:'三角肌・胸上束',     w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40]},
-    {id:'barbpress',n:'站姿槓鈴推舉',    m:'三角肌前束',         w:[20,30,40,50,60,70,80,90,100,110,120,140]},
-    {id:'lateral',  n:'啞鈴側平舉',      m:'三角肌中束',         w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
-    {id:'tricpush', n:'繩索下壓',        m:'肱三頭肌',           w:[10,15,20,25,30,35,40,50,60,70]},
+    {id:'dbpress',  n:'坐姿哑铃推举',    m:'三角肌・胸上束',     w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40]},
+    {id:'barbpress',n:'站姿杠铃推举',    m:'三角肌前束',         w:[20,30,40,50,60,70,80,90,100,110,120,140]},
+    {id:'lateral',  n:'哑铃侧平举',      m:'三角肌中束',         w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
+    {id:'tricpush', n:'绳索下压',        m:'肱三头肌',           w:[10,15,20,25,30,35,40,50,60,70]},
     {id:'pulldown', n:'高位下拉',        m:'背闊肌・菱形肌',     w:[20,30,40,50,60,70,80,90,100,110,120]},
     {id:'cabrow',   n:'坐姿划船',        m:'菱形肌・中斜方肌',   w:[20,30,40,50,60,70,80,90,100,110]},
-    {id:'revfly',   n:'反向飛鳥',        m:'後三角・菱形肌',     w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
-    {id:'fly',      n:'飛鳥',            m:'胸大肌',             w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
-    {id:'incdbcurl',n:'斜凳啞鈴彎舉',   m:'肱二頭肌',           w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
-    {id:'singlecurl',n:'站姿斜凳單臂彎舉',m:'肱二頭肌（峰值）', w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
-    {id:'pullup',   n:'引體向上',        m:'背闊肌・肱二頭',     w:['自體','+5kg','+10kg','+15kg','+20kg','+25kg','+30kg','+40kg','+50kg','+60kg','+70kg','+80kg','+100kg']},
-    {id:'pushup',   n:'俯臥撐',          m:'胸大肌・三頭・核心', w:['自體']},
+    {id:'revfly',   n:'反向飞鸟',        m:'後三角・菱形肌',     w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
+    {id:'fly',      n:'飞鸟',            m:'胸大肌',             w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
+    {id:'incdbcurl',n:'斜凳哑铃弯举',   m:'肱二头肌',           w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
+    {id:'singlecurl',n:'站姿斜凳单臂弯举',m:'肱二头肌（峰值）', w:[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]},
+    {id:'pullup',   n:'引体向上',        m:'背闊肌・肱二头',     w:['自体','+5kg','+10kg','+15kg','+20kg','+25kg','+30kg','+40kg','+50kg','+60kg','+70kg','+80kg','+100kg']},
+    {id:'pushup',   n:'俯卧撑',          m:'胸大肌・三头・核心', w:['自体']},
   ],
   '臀腿':[
-    {id:'bulgarian',n:'保加利亞深蹲',   m:'股四頭・臀大肌',     w:['自體',4,6,8,10,12,14,16,18,20,24,28,32,40,50]},
-    {id:'barsquat', n:'負重深蹲',       m:'股四頭・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140,160,180]},
-    {id:'rdl',      n:'羅馬尼亞硬舉',   m:'膕繩肌・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140]},
-    {id:'legpress', n:'倒蹬',           m:'股四頭・臀大肌',     w:[30,50,60,80,100,120,140,160,180,200,220,250]},
-    {id:'legcurl',  n:'附身勾腿',       m:'膕繩肌',             w:[10,15,20,25,30,35,40,50,60,70]},
-    {id:'hangleg',  n:'懸垂舉腿',       m:'下腹・髂腰肌',       w:['自體']},
-    {id:'kbswing',  n:'甩壺鈴',         m:'臀大肌・膕繩肌・核心',w:[6,8,10,12,14,16,18,20,24,28,32,36,40]},
-    {id:'singlekb', n:'單腿壺鈴硬拉',  m:'臀大肌・膕繩肌',     w:[6,8,10,12,14,16,18,20,24,28,32,36]},
-    {id:'barthrust',n:'槓鈴臀推',       m:'臀大肌',             w:[20,30,40,50,60,70,80,100,120,140,160,180]},
-    {id:'goatback', n:'山羊挺身',       m:'豎脊肌・臀大肌',     w:['自體',4,6,8,10,12,14,16,18,20,22,24,26,28,30]},
+    {id:'bulgarian',n:'保加利亚深蹲',   m:'股四头・臀大肌',     w:['自体',4,6,8,10,12,14,16,18,20,24,28,32,40,50]},
+    {id:'barsquat', n:'负重深蹲',       m:'股四头・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140,160,180]},
+    {id:'rdl',      n:'罗马尼亚硬举',   m:'腘绳肌・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140]},
+    {id:'legpress', n:'倒蹬',           m:'股四头・臀大肌',     w:[30,50,60,80,100,120,140,160,180,200,220,250]},
+    {id:'legcurl',  n:'附身勾腿',       m:'腘绳肌',             w:[10,15,20,25,30,35,40,50,60,70]},
+    {id:'hangleg',  n:'悬垂举腿',       m:'下腹・髂腰肌',       w:['自体']},
+    {id:'kbswing',  n:'甩壶铃',         m:'臀大肌・腘绳肌・核心',w:[6,8,10,12,14,16,18,20,24,28,32,36,40]},
+    {id:'singlekb', n:'单腿壶铃硬拉',  m:'臀大肌・腘绳肌',     w:[6,8,10,12,14,16,18,20,24,28,32,36]},
+    {id:'barthrust',n:'杠铃臀推',       m:'臀大肌',             w:[20,30,40,50,60,70,80,100,120,140,160,180]},
+    {id:'goatback', n:'山羊挺身',       m:'豎脊肌・臀大肌',     w:['自体',4,6,8,10,12,14,16,18,20,22,24,26,28,30]},
   ],
   '核心':[
-    {id:'crunch',   n:'卷腹',           m:'腹直肌',             w:['自體',4,6,8,10,12,14,16,18,20]},
-    {id:'trx',      n:'TRX',            m:'全核心',             w:['自體']},
-    {id:'plank',    n:'棒式平板支撐',   m:'腹橫肌・核心穩定',  w:['自體']},
+    {id:'crunch',   n:'卷腹',           m:'腹直肌',             w:['自体',4,6,8,10,12,14,16,18,20]},
+    {id:'trx',      n:'TRX',            m:'全核心',             w:['自体']},
+    {id:'plank',    n:'棒式平板支撑',   m:'腹橫肌・核心穩定',  w:['自体']},
   ],
 };
 
@@ -1092,86 +1092,86 @@ function getEX(){
 // Alias for convenience
 let EX=EX_BUILTIN; // will be refreshed in renderWo
 
-const CAT2ACT={'肩背胸':'肩背訓練','核心':'核心訓練','臀腿':'臀腿訓練'};
-const LEVELS=[{x:0,n:'新兵'},{x:100,n:'鬥士'},{x:250,n:'戰士'},{x:500,n:'精銳'},{x:1000,n:'鐵人'},{x:2000,n:'SURGE LEGEND'}];
+const CAT2ACT={'肩背胸':'肩背训练','核心':'核心训练','臀腿':'臀腿训练'};
+const LEVELS=[{x:0,n:'新兵'},{x:100,n:'斗士'},{x:250,n:'战士'},{x:500,n:'精锐'},{x:1000,n:'铁人'},{x:2000,n:'SURGE LEGEND'}];
 const ACHS=[
-  {id:'f1',ic:'⚡',n:'點火',d:'完成第一次訓練',fn:(l,s)=>l>=1},
-  {id:'w7',ic:'🔩',n:'鐵紀律',d:'連續訓練7天',fn:(l,s)=>s>=7},
-  {id:'t10',ic:'💀',n:'十連戰',d:'累計10次訓練',fn:(l,s)=>l>=10},
-  {id:'w20',ic:'⚔️',n:'戰士',d:'累計20次訓練',fn:(l,s)=>l>=20},
-  {id:'c30',ic:'🏆',n:'百鍊成鋼',d:'累計30次訓練',fn:(l,s)=>l>=30},
+  {id:'f1',ic:'⚡',n:'点火',d:'完成第一次训练',fn:(l,s)=>l>=1},
+  {id:'w7',ic:'🔩',n:'铁纪律',d:'连续训练7天',fn:(l,s)=>s>=7},
+  {id:'t10',ic:'💀',n:'十连战',d:'累计10次训练',fn:(l,s)=>l>=10},
+  {id:'w20',ic:'⚔️',n:'战士',d:'累计20次训练',fn:(l,s)=>l>=20},
+  {id:'c30',ic:'🏆',n:'百鍊成鋼',d:'累计30次训练',fn:(l,s)=>l>=30},
 ];
 const QUOTES=[
-  '⚡ 後燃效應：高強度訓練後身體持續燃燒最多 48 小時——睡覺也在進化。',
-  '💀 肌肉量每增加 1kg，靜止代謝率提升 50 kcal/天——練肌肉是安裝燃脂引擎。',
-  '🔥 EPOC 效應讓你訓練結束後再多燃燒 6-15% 的熱量——代價是你必須夠拼。',
-  '🎯 複合動作（深蹲、臥推、硬舉）同時啟動多個肌群——效率最高的訓練方式。',
-  '⚔️ 訓練 6-8 週後神經系統先適應讓力量上升；12 週後肌肉才真正生長。',
-  '🏆 蛋白質消化消耗自身熱量的 20-30%——吃 100kcal 雞胸肉，淨吸收只有 70-80kcal。',
-  '🔩 睡眠不足 6 小時讓飢餓素上升 28%，多吃 300-500kcal——睡好就是在強化。',
-  '💥 負重訓練增加骨密度——力量訓練是對整個身體系統的升級。',
+  '⚡ 後燃效应：高强度训练後身体持续燃燒最多 48 小時——睡觉也在進化。',
+  '💀 肌肉量每增加 1kg，靜止代谢率提升 50 kcal/天——练肌肉是安装燃脂引擎。',
+  '🔥 EPOC 效应让你训练结束後再多燃燒 6-15% 的热量——代價是你必須夠拼。',
+  '🎯 复合動作（深蹲、卧推、硬举）同時启動多個肌群——效率最高的训练方式。',
+  '⚔️ 训练 6-8 周後神經系统先适应让力量上升；12 周後肌肉才真正生长。',
+  '🏆 蛋白质消化消耗自身热量的 20-30%——吃 100kcal 雞胸肉，淨吸收只有 70-80kcal。',
+  '🔩 睡眠不足 6 小時让饥饿素上升 28%，多吃 300-500kcal——睡好就是在强化。',
+  '💥 负重训练增加骨密度——力量训练是對整個身体系统的升级。',
 ];
 const TIPS=[
-  // 訓練標語
-  {cat:'訓練心態',items:[
-    '每一滴汗水都是蛻變的開始，堅持就是勝利。',
+  // 训练标語
+  {cat:'训练心态',items:[
+    '每一滴汗水都是蛻變的开始，堅持就是勝利。',
     '不是要贏別人，是要超越昨天的自己。',
     '肌肉是痛苦建造的，成就是汗水換來的。',
-    '休息不是放棄，是讓身體準備好更好的自己。',
-    '訓練的當下你覺得很難，但每次完成都是一次突破。',
+    '休息不是放棄，是让身体準備好更好的自己。',
+    '训练的當下你觉得很难，但每次完成都是一次突破。',
   ]},
-  // 蛋白質 & 碳水
-  {cat:'營養補充',items:[
-    '訓練後 30 分鐘內是蛋白質黃金補充時機，效果最佳。',
-    '每公斤體重攝取 1.6–2.2g 蛋白質，有效幫助肌肉修復與合成。',
-    '訓練前 1–2 小時補充複合碳水（地瓜、糙米），維持訓練能量。',
-    '睡前補充酪蛋白（起司、希臘優格），夜間肌肉修復更有效率。',
-    '碳水不是敵人：訓練日適量補充碳水能讓你舉更重、跑更久。',
-    '魚油 Omega-3 有助降低訓練後發炎，加速恢復。',
+  // 蛋白质 & 碳水
+  {cat:'營養补充',items:[
+    '训练後 30 分钟內是蛋白质黃金补充時機，效果最佳。',
+    '每公斤体重攝取 1.6–2.2g 蛋白质，有效幫助肌肉修復與合成。',
+    '训练前 1–2 小時补充复合碳水（地瓜、糙米），維持训练能量。',
+    '睡前补充酪蛋白（起司、希臘優格），夜間肌肉修復更有效率。',
+    '碳水不是敵人：训练日适量补充碳水能让你举更重、跑更久。',
+    '魚油 Omega-3 有助降低训练後發炎，加速恢復。',
   ]},
   // 水分
-  {cat:'水分補給',items:[
-    '每天至少喝 2000ml 水，訓練日要再加 500–1000ml。',
-    '輕微脫水就會讓體力下降 10–20%，要在口渴前就補水。',
-    '訓練前 30 分鐘先喝 500ml，訓練中每 15–20 分鐘補充一次。',
-    '尿液顏色是最好的水分指標——淡黃色才代表水分充足。',
-    '電解質飲料適合超過 60 分鐘的訓練，幫助補充鈉鉀流失。',
+  {cat:'水分补给',items:[
+    '每天至少喝 2000ml 水，训练日要再加 500–1000ml。',
+    '輕微脫水就会让体力下降 10–20%，要在口渴前就补水。',
+    '训练前 30 分钟先喝 500ml，训练中每 15–20 分钟补充一次。',
+    '尿液顏色是最好的水分指标——淡黃色才代表水分充足。',
+    '電解质饮料适合超過 60 分钟的训练，幫助补充鈉鉀流失。',
   ]},
-  // 身體反應
-  {cat:'身體訊號',items:[
-    '訓練後 24–48 小時的延遲性痠痛（DOMS）是正常，代表肌肉正在適應。',
-    '若靜止心率比平常高 5–10 下，可能是過度訓練或睡眠不足的訊號。',
-    '關節痛 ≠ 肌肉痠——關節疼痛請立刻停止訓練，以免受傷加重。',
-    '頭暈、噁心通常是血糖過低或脫水，先補水和輕食再繼續。',
-    '體重一夜暴增通常是水分滯留（高鈉飲食、月經前後），不是真正增脂。',
-    '睡眠是最強的恢復工具，7–9 小時睡眠能讓生長激素達到峰值。',
+  // 身体反应
+  {cat:'身体訊號',items:[
+    '训练後 24–48 小時的延遲性痠痛（DOMS）是正常，代表肌肉正在适应。',
+    '若靜止心率比平常高 5–10 下，可能是過度训练或睡眠不足的訊號。',
+    '关節痛 ≠ 肌肉痠——关節疼痛請立刻停止训练，以免受傷加重。',
+    '头暈、噁心通常是血糖過低或脫水，先补水和輕食再继续。',
+    '体重一夜暴增通常是水分滯留（高鈉饮食、月經前後），不是真正增脂。',
+    '睡眠是最强的恢復工具，7–9 小時睡眠能让生长激素达到峰值。',
   ]},
   // 休息 & 恢復
   {cat:'休息恢復',items:[
-    '肌肉是在休息時生長的，不是訓練時——確保每個肌群有 48 小時恢復。',
+    '肌肉是在休息時生长的，不是训练時——确保每個肌群有 48 小時恢復。',
     '主動恢復比完全靜止更好：輕鬆散步、伸展、泳池漂浮都有幫助。',
-    '泡沫滾軸（Foam Roll）能有效減少肌肉緊繃，建議訓練後使用 10 分鐘。',
-    '超過 3 天連續高強度訓練可能讓進步停滯，加入一個輕鬆日。',
-    '訓練後冷熱交替淋浴能加速血液循環，幫助廢物代謝。',
+    '泡沫滾軸（Foam Roll）能有效减少肌肉緊繃，建議训练後使用 10 分钟。',
+    '超過 3 天连续高强度训练可能让進步停滯，加入一個輕鬆日。',
+    '训练後冷热交替淋浴能加速血液循環，幫助廢物代谢。',
   ]},
   // 消炎 & 恢復食物
   {cat:'消炎食物',items:[
-    '薑黃（Curcumin）是天然消炎好幫手，加在飲品或料理裡每天補充。',
-    '鮭魚、鯖魚等富含 Omega-3 的魚類，每週吃 2–3 次有助降低發炎。',
-    '藍莓、黑莓富含花青素，能減少訓練引起的氧化壓力。',
-    '綠茶中的 EGCG 有抗氧化作用，訓練後喝一杯無糖綠茶很不錯。',
+    '薑黃（Curcumin）是天然消炎好幫手，加在饮品或料理裡每天补充。',
+    '鮭魚、鯖魚等富含 Omega-3 的魚類，每周吃 2–3 次有助降低發炎。',
+    '藍莓、黑莓富含花青素，能减少训练引起的氧化压力。',
+    '綠茶中的 EGCG 有抗氧化作用，训练後喝一杯無糖綠茶很不錯。',
     '大蒜、洋蔥含硫化物，有助天然抗發炎。',
-    '維生素 C 幫助膠原蛋白合成，受傷後多補充奇異果、花椰菜。',
+    '維生素 C 幫助膠原蛋白合成，受傷後多补充奇異果、花椰菜。',
   ]},
-  // 體重體脂水分
-  {cat:'體重體脂',items:[
-    '每天量體重最準的時間是早上起床後、上廁所後、空腹狀態。',
-    '體重 1 週內 ±1–2kg 的波動是正常的，不要因此焦慮。',
-    '水分滯留常見原因：高鈉飲食、月經前期、高碳水日、睡眠不足。',
-    '體脂下降但體重不變？可能是增肌減脂同步進行，這是好事！',
-    '減脂速度以每週 0.5–1% 體重為健康速率，太快會流失肌肉。',
-    '脂肪 1kg ≈ 7700 kcal，每天減少 500 kcal 約 2 週減 1kg 脂肪。',
-    '碳水每 1g 會攜帶約 3g 水分，低碳飲食初期掉的多半是水重。',
+  // 体重体脂水分
+  {cat:'体重体脂',items:[
+    '每天量体重最準的時間是早上起床後、上廁所後、空腹狀态。',
+    '体重 1 周內 ±1–2kg 的波動是正常的，不要因此焦慮。',
+    '水分滯留常見原因：高鈉饮食、月經前期、高碳水日、睡眠不足。',
+    '体脂下降但体重不變？可能是增肌减脂同步進行，這是好事！',
+    '减脂速度以每周 0.5–1% 体重为健康速率，太快会流失肌肉。',
+    '脂肪 1kg ≈ 7700 kcal，每天减少 500 kcal 約 2 周减 1kg 脂肪。',
+    '碳水每 1g 会攜帶約 3g 水分，低碳饮食初期掉的多半是水重。',
   ]},
 ];
 
@@ -1327,7 +1327,7 @@ function markDayComplete(ds){
   items.forEach((_,i)=>{S.weekPlan[ds].checked[i]=true;});
   sd('weekPlan',S.weekPlan);
   renderWeek();updateHdr();
-  toast('今日訓練已全部完成！🎉');
+  toast('今日训练已全部完成！🎉');
 }
 
 function isDayFullyComplete(ds){
@@ -1365,18 +1365,18 @@ function updateHdr(){
   const wdays=S.logs.filter(l=>new Date(l.date)>=ws2&&l.date<=today()&&isDayFullyComplete(l.date)).length;
   const name2=S.name||'';
   const prefix=name2?`${name2}，`:'';
-  const MOTI=['你在變強，繼續保持！','每一次出現都是勝利。','今天的汗，是明天的蛻變。','持續就是超越。','相信自己的節奏。'];
+  const MOTI=['你在變强，继续保持！','每一次出現都是勝利。','今天的汗，是明天的蛻變。','持续就是超越。','相信自己的節奏。'];
   const motiQ=MOTI[new Date().getDate()%MOTI.length];
   document.getElementById('streakTxt').textContent=
-    wdays>=5?`${prefix}本週練了 ${wdays} 天，超厲害！${timeEmoji} ${motiQ}`:
-    wdays>=3?`${prefix}本週訓練 ${wdays} 天，繼續累積！${timeEmoji} ${motiQ}`:
-    wdays>=1?`${prefix}本週開始第一天，好的開始！${timeEmoji} ${motiQ}`:
-    `${prefix}今天開始訓練吧！${timeEmoji} ${motiQ}`;
+    wdays>=5?`${prefix}本周练了 ${wdays} 天，超厲害！${timeEmoji} ${motiQ}`:
+    wdays>=3?`${prefix}本周训练 ${wdays} 天，继续累积！${timeEmoji} ${motiQ}`:
+    wdays>=1?`${prefix}本周开始第一天，好的开始！${timeEmoji} ${motiQ}`:
+    `${prefix}今天开始训练吧！${timeEmoji} ${motiQ}`;
 }
 function updateNameBtn(){
   // Name button = icon only, tooltip shows name
   const btn=document.getElementById('nameBtn');
-  if(btn){btn.textContent='👤';btn.title=S.name?`${S.name} · 點此修改`:'設定名稱';}
+  if(btn){btn.textContent='👤';btn.title=S.name?`${S.name} · 点此修改`:'设定名称';}
   if(S.name){const p=document.getElementById('pName');if(p)p.value=S.name;}
 }
 
@@ -1389,7 +1389,7 @@ function updateAllKcal(){
   // Include custom aerobic if selected
   const customRow=document.getElementById('customAerobicRow');
   if(customRow&&customRow.classList.contains('sel')){
-    const customName=document.getElementById('customAerobicName')?.value.trim()||'自訂有氧';
+    const customName=document.getElementById('customAerobicName')?.value.trim()||'自订有氧';
     customRow.dataset.act=customName;
     if(!aerRows.includes(customRow))aerRows.push(customRow);
   }
@@ -1401,14 +1401,14 @@ function updateAllKcal(){
     if(act==='打羽球'){
       const intensity=document.getElementById('badminton-intensity')?.value||'mid';
       const met={low:0.07,mid:0.11,high:0.15}[intensity]||0.11;
-      const labels={low:'低強度',mid:'中強度',high:'高強度'};
+      const labels={low:'低强度',mid:'中强度',high:'高强度'};
       k=Math.round(met*w*dur);
       aerDetail.push(`${act}(${labels[intensity]}) ${dur}分 ≈${k}kcal`);
-    } else if(act==='飛輪'){
+    } else if(act==='飞輪'){
       const manualKcal=parseInt(document.getElementById('cycling-kcal')?.value)||0;
-      k=manualKcal>0?manualKcal:Math.round((AMET['飛輪']||0.14)*w*dur);
-      const src=manualKcal>0?'手動輸入':'估算';
-      aerDetail.push(`飛輪 ${dur}分 ${src}:${k}kcal`);
+      k=manualKcal>0?manualKcal:Math.round((AMET['飞輪']||0.14)*w*dur);
+      const src=manualKcal>0?'手動输入':'估算';
+      aerDetail.push(`飞輪 ${dur}分 ${src}:${k}kcal`);
     } else {
       k=Math.round((AMET[act]||0.1)*w*dur);
       aerDetail.push(`${act} ${dur}分 ≈${k}kcal`);
@@ -1451,7 +1451,7 @@ function updateAllKcal(){
   });
   wtKcal=Math.round(wtKcal);
   wtKcal=Math.round(wtKcal);
-  if(wtSetsTotal>0)wtDetail.push(`${wtSetsTotal}組 ≈${wtKcal}kcal`);
+  if(wtSetsTotal>0)wtDetail.push(`${wtSetsTotal}组 ≈${wtKcal}kcal`);
   document.getElementById('weightKcal').style.display=exIds2.length?'flex':'none';
   document.getElementById('weightKcalVal').textContent=wtKcal;
   document.getElementById('weightKcalDetail').textContent=wtDetail.join('　');
@@ -1465,7 +1465,7 @@ function finishToday(){
   const aerRows=[...document.querySelectorAll('#aerobicList .act-row.sel')];
   const pilRows=[...document.querySelectorAll('#pilatesList .act-row.sel')];
   const exIds=Object.keys(selEx);
-  if(!aerRows.length&&!pilRows.length&&!exIds.length){toast('請先選擇訓練項目！');return;}
+  if(!aerRows.length&&!pilRows.length&&!exIds.length){toast('請先选择训练项目！');return;}
 
   const w=getW();
   // Build sessions
@@ -1478,9 +1478,9 @@ function finishToday(){
     if(act==='打羽球'){
       const intensity=document.getElementById('badminton-intensity')?.value||'mid';
       const met={low:0.07,mid:0.11,high:0.15}[intensity]||0.11;
-      const labels={low:'低強度',mid:'中強度',high:'高強度'};
+      const labels={low:'低强度',mid:'中强度',high:'高强度'};
       kcal=Math.round(met*w*dur);extra=labels[intensity];
-    } else if(act==='飛輪'){
+    } else if(act==='飞輪'){
       const manualKcal=parseInt(document.getElementById('cycling-kcal')?.value)||0;
       kcal=manualKcal>0?manualKcal:Math.round(0.14*w*dur);
       extra=manualKcal>0?'手動':'估算';
@@ -1566,11 +1566,11 @@ function finishToday(){
 function syncWin(v){const h=document.getElementById('wIn');if(h)h.value=v;updateAllKcal();}
 function saveBody(){
   const w=document.getElementById('wIn').value,f=document.getElementById('fIn').value;
-  if(!w&&!f){toast('請輸入體重或體脂！');return;}
+  if(!w&&!f){toast('請输入体重或体脂！');return;}
   const ds=today(),ei=S.body.findIndex(s=>s.date===ds);
   const stat={date:ds,w:w?parseFloat(w):null,f:f?parseFloat(f):null};
   if(ei>=0)S.body[ei]=stat;else S.body.push(stat);
-  sd('body',S.body);renderCharts();toast('體態記錄已儲存');
+  sd('body',S.body);renderCharts();toast('体态记录已储存');
 }
 
 // ══ WEEK TODO LIST ══
@@ -1661,7 +1661,7 @@ function renderWkTodo(){
         s.exDetails.forEach(ex=>{
           const setsStr=ex.sets?.length>0
             ?ex.sets.map((st,i)=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' ')
-            :`${ex.sc||3}組×${ex.r||12}次`;
+            :`${ex.sc||3}组×${ex.r||12}次`;
           items.push({title:ex.n,sub:setsStr,done:true});
         });
       }
@@ -1671,18 +1671,18 @@ function renderWkTodo(){
     plan.sessions.forEach((s,i)=>{
       if(s.type==='aerobic'){
         items.push({title:`${s.act}${s.extra?' ('+s.extra+')':''}`,
-          sub:`計劃 ${s.dur}分`,done:false});
+          sub:`计划 ${s.dur}分`,done:false});
       } else if(s.type==='pilates'){
         items.push({title:`皮拉提斯${s.area?' · '+s.area:''}`,
-          sub:`計劃 ${s.dur}分`,done:false});
+          sub:`计划 ${s.dur}分`,done:false});
       } else if(s.type==='weights'){
-        items.push({title:s.act.replace('訓練','')+'（重訓）',
-          sub:'今日計劃',done:false});
+        items.push({title:s.act.replace('训练','')+'（重训）',
+          sub:'今日计划',done:false});
       }
     });
   } else if(plan?.acts?.length){
     plan.acts.forEach(act=>{
-      items.push({title:act,sub:'今日計劃',done:false});
+      items.push({title:act,sub:'今日计划',done:false});
     });
   }
 
@@ -1698,9 +1698,9 @@ function renderWkTodo(){
     const hasAnyChecked=Object.values(planChk).some(v=>v===true);
     const shownKcal=0;// removed
     html+=`<div style="background:linear-gradient(160deg,#0A0A0A 0%,#2A0000 50%,#CC0000 100%);border-radius:14px;padding:13px 16px;margin-bottom:10px;cursor:pointer;border:1px solid rgba(200,34,0,0.3)" onclick="openDayCard('${ds}')">
-      <div style="font-size:0.6rem;font-weight:800;color:rgba(255,255,255,0.65);letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">${hasAnyChecked?'訓練完成 · 點擊查看':'已記錄 · 請打勾確認完成'}</div>
+      <div style="font-size:0.6rem;font-weight:800;color:rgba(255,255,255,0.65);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px">${hasAnyChecked?'训练完成 · 点擊查看':'已记录 · 請打勾确认完成'}</div>
       <div style="display:flex;align-items:center;gap:12px">
-        ${log.dur?`<div><div style="font-size:1.4rem;font-weight:900;color:#fff;line-height:1">${log.dur}</div><div style="font-size:0.6rem;color:rgba(255,255,255,0.7);font-weight:700">分鐘</div></div>`:''}
+        ${log.dur?`<div><div style="font-size:1.4rem;font-weight:900;color:#fff;line-height:1">${log.dur}</div><div style="font-size:0.6rem;color:rgba(255,255,255,0.7);font-weight:700">分钟</div></div>`:''}
         <div style="flex:1;text-align:right;display:flex;gap:4px;justify-content:flex-end;flex-wrap:wrap">
           ${cats.map(c=>`<span style="background:rgba(255,255,255,0.2);color:#fff;border-radius:6px;padding:2px 7px;font-size:0.62rem;font-weight:800">${c}</span>`).join('')}
         </div>
@@ -1708,7 +1708,7 @@ function renderWkTodo(){
     </div>`;
   } else if(plan?.acts?.length){
     html+=`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #1A1A1A">
-      <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">已安排計劃</div>
+      <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">已安排计划</div>
     </div>`;
   }
   items.forEach((item,i)=>{
@@ -1727,7 +1727,7 @@ function renderWkTodo(){
 
   if(isEmpty){
     html=`<div style="font-size:0.8rem;color:#888888;font-weight:600;padding:8px 0">${
-      isPast?'這天沒有訓練記錄':isToday?'今天還沒有訓練，開始記錄吧！':'尚未安排'
+      isPast?'這天没有训练记录':isToday?'今天还没有训练，开始记录吧！':'尚未安排'
     }</div>`;
   }
 
@@ -1755,7 +1755,7 @@ function showDayDetail(ds){
     if(aerSes.length){
       html+=`<div class="detail-section"><div class="detail-section-title">有氧</div>`;
       aerSes.forEach(s=>{
-        html+=`<div class="detail-act-row">${s.act}<div class="detail-sub">${s.dur} 分鐘・預估 ${s.kcal} kcal</div></div>`;
+        html+=`<div class="detail-act-row">${s.act}<div class="detail-sub">${s.dur} 分钟・預估 ${s.kcal} kcal</div></div>`;
       });
       html+='</div>';
     }
@@ -1764,34 +1764,34 @@ function showDayDetail(ds){
     if(pilSes.length){
       html+=`<div class="detail-section"><div class="detail-section-title">皮拉提斯</div>`;
       pilSes.forEach(s=>{
-        html+=`<div class="detail-act-row">皮拉提斯<div class="detail-sub">${s.dur} 分鐘・預估 ${s.kcal} kcal</div></div>`;
+        html+=`<div class="detail-act-row">皮拉提斯<div class="detail-sub">${s.dur} 分钟・預估 ${s.kcal} kcal</div></div>`;
       });
       html+='</div>';
     }
     // Weight training
     const wtSes=log.sessions.filter(s=>s.type==='weights');
     if(wtSes.length&&wtSes[0].exDetails&&wtSes[0].exDetails.length){
-      html+=`<div class="detail-section"><div class="detail-section-title">重訓</div>`;
+      html+=`<div class="detail-section"><div class="detail-section-title">重训</div>`;
       wtSes[0].exDetails.forEach(ex=>{
         html+=`<div class="detail-ex-row"><div class="detail-ex-name">${ex.n}</div>`;
         if(ex.sets&&ex.sets.length){
           ex.sets.forEach((s,i)=>{
-            html+=`<div class="detail-set">第${i+1}組　${s.w}${typeof s.w==='number'?'kg':''}　×　${s.r} 次</div>`;
+            html+=`<div class="detail-set">第${i+1}组　${s.w}${typeof s.w==='number'?'kg':''}　×　${s.r} 次</div>`;
           });
         }
         html+='</div>';
       });
       html+='</div>';
     }
-    html+=`<div style="font-size:0.78rem;color:#888888;font-weight:700;padding-top:8px;border-top:1px solid var(--p3)">總計　${log.dur||0} 分鐘　・　${log.kcal||0} kcal</div>`;
+    html+=`<div style="font-size:0.78rem;color:#888888;font-weight:700;padding-top:8px;border-top:1px solid var(--p3)">总计　${log.dur||0} 分钟　・　${log.kcal||0} kcal</div>`;
   } else if(log){
     html=`<div style="font-size:0.82rem;color:#E0E0E0;font-weight:700">${(log.acts||[]).join(' · ')}</div>`;
     if(log.kcal) html+=`<div style="font-size:0.76rem;color:#888888;margin-top:6px">預估 ${log.kcal} kcal</div>`;
   } else if(plan?.acts?.length){
-    html+=`<div style="font-weight:800;font-size:0.8rem;color:#BBBBBB;margin-bottom:6px">計劃中</div>`;
+    html+=`<div style="font-weight:800;font-size:0.8rem;color:#BBBBBB;margin-bottom:6px">计划中</div>`;
     html+=`<div style="font-size:0.8rem;font-weight:700;color:#E0E0E0">${plan.acts.join(' · ')}</div>`;
   } else {
-    html='<div style="color:#888888;font-size:0.82rem">這天還沒有安排訓練</div>';
+    html='<div style="color:#888888;font-size:0.82rem">這天还没有安排训练</div>';
   }
   document.getElementById('dayMoC').innerHTML=html;
   document.getElementById('dayMo').classList.add('open');
@@ -1800,13 +1800,13 @@ function showDayDetail(ds){
 // ══ WORKOUT ══
 function renderWo(){
   EX=getEX();
-  const cats=[...Object.keys(EX),'＋ 自訂'];
+  const cats=[...Object.keys(EX),'＋ 自订'];
   document.getElementById('catTabs').innerHTML=cats.map(c=>
     `<button class="ctab${c===curCat?' active':''}" onclick="swCat('${c}')">${c}</button>`).join('');
   renderEx();
 }
 function swCat(c){
-  if(c==='＋ 自訂'){openAddExModal();return;}
+  if(c==='＋ 自订'){openAddExModal();return;}
   curCat=c;renderWo();
 }
 function renderEx(){
@@ -1821,12 +1821,12 @@ function renderEx(){
       </div>
       ${sel?`<div class="ex-ctrls" onclick="event.stopPropagation()">
         <div class="exc-c"><label>重量</label><select onchange="uf('${ex.id}','w',this.value)">${ex.w.map(w=>`<option value="${w}"${sel.w==w?' selected':''}>${w}${typeof w==='number'?'kg':''}</option>`).join('')}</select></div>
-        <div class="exc-c"><label>次數</label><input type="number" value="${sel.r||12}" min="1" max="100" onchange="uf('${ex.id}','r',this.value)" onclick="event.stopPropagation()"></div>
-        <div class="exc-c"><label>組數</label><input type="number" value="${sel.sc||3}" min="1" max="20" onchange="uf('${ex.id}','sc',this.value)" onclick="event.stopPropagation()"></div>
+        <div class="exc-c"><label>次数</label><input type="number" value="${sel.r||12}" min="1" max="100" onchange="uf('${ex.id}','r',this.value)" onclick="event.stopPropagation()"></div>
+        <div class="exc-c"><label>组数</label><input type="number" value="${sel.sc||3}" min="1" max="20" onchange="uf('${ex.id}','sc',this.value)" onclick="event.stopPropagation()"></div>
       </div>
       <div style="display:flex;align-items:center;gap:8px;margin-top:6px">
-        <button class="add-set-btn" style="flex:1" onclick="event.stopPropagation();logSet('${ex.id}')">＋ 記錄這組</button>
-        ${sets.length?`<div style="background:#222222;border-radius:8px;padding:5px 10px;font-size:0.75rem;font-weight:800;color:#E8E0D8;white-space:nowrap">✓ ${sets.length} 組已記錄</div>`:''}
+        <button class="add-set-btn" style="flex:1" onclick="event.stopPropagation();logSet('${ex.id}')">＋ 记录這组</button>
+        ${sets.length?`<div style="background:#222222;border-radius:8px;padding:5px 10px;font-size:0.75rem;font-weight:800;color:#E8E0D8;white-space:nowrap">✓ ${sets.length} 组已记录</div>`:''}
       </div>
       ${sets.length?`<div style="margin-top:5px;font-size:0.68rem;color:#888888;font-weight:600;line-height:1.6">${sets.map((s,i)=>`${s.w}${typeof s.w==='number'?'kg':''}×${s.r}`).join('　')}</div>`:''}
       `:''}
@@ -1861,7 +1861,7 @@ function renderCal(){
   for(let day=1;day<=last.getDate();day++){
     const ds=calMon.getFullYear()+'-'+String(calMon.getMonth()+1).padStart(2,'0')+'-'+String(day).padStart(2,'0');
     const log=S.logs.find(l=>l.date===ds);
-    const actsShort=log?(log.acts||[]).map(a=>a.replace('訓練','')).slice(0,3).join(' '):'' ;
+    const actsShort=log?(log.acts||[]).map(a=>a.replace('训练','')).slice(0,3).join(' '):'' ;
     html+=`<div class="cal-c${log?' has':''}${ds===td?' today':''}" onclick="showDayDetail('${ds}')">
       <div>${day}</div>
       ${actsShort?`<div class="cal-acts">${actsShort}</div>`:''}
@@ -1875,7 +1875,7 @@ function renderLog(){
   document.getElementById('logList').innerHTML=logs.length?
     logs.map(l=>{
       const sesStr=l.sessions?l.sessions.map(s=>{
-        if(s.type==='weights')return `重訓 ${s.exDetails?s.exDetails.length+'個動作':''}`;
+        if(s.type==='weights')return `重训 ${s.exDetails?s.exDetails.length+'個動作':''}`;
         return `${s.act} ${s.dur||0}分`;
       }).join(' · '):(l.acts||[]).join(' · ');
       return `<div class="li">
@@ -1887,7 +1887,7 @@ function renderLog(){
         <div class="li-s">${l.kcal?l.kcal+'kcal':''}</div>
       </div>`;
     }).join(''):
-    '<div style="text-align:center;color:#888888;font-size:0.76rem;padding:10px">尚無訓練日誌</div>';
+    '<div style="text-align:center;color:#888888;font-size:0.76rem;padding:10px">尚無训练日志</div>';
 }
 
 // ══ WATER ══
@@ -1938,7 +1938,7 @@ function selFood(n,c,p,cb){
 }
 function addFood(){
   const name=document.getElementById('cFood').value.trim();
-  if(!name){toast('請輸入食物名稱！');return;}
+  if(!name){toast('請输入食物名称！');return;}
   const fEl=document.getElementById('cFood');
   const serv=parseFloat(document.getElementById('cServ').value)||1;
   const baseC=parseFloat(document.getElementById('cCal').value)||parseFloat(fEl.dataset.c)||0;
@@ -1979,7 +1979,7 @@ function renderMeals(){
         </div>
       </div>
       <button class="mi-del" onclick="delFood(${item.id})">✕</button></div>`).join(''):
-    '<div style="text-align:center;color:#888888;font-size:0.76rem;padding:8px">今天還沒有飲食記錄</div>';
+    '<div style="text-align:center;color:#888888;font-size:0.76rem;padding:8px">今天还没有饮食记录</div>';
 }
 function delFood(id){
   S.meals.items=S.meals.items.filter(i=>i.id!==id);sd('meals',S.meals);
@@ -2006,14 +2006,14 @@ function renderWdt(){
 function renderCharts(){
   const wData=S.body.filter(s=>s.w).slice(-7),fData=S.body.filter(s=>s.f).slice(-7);
   const wEl=document.getElementById('wtC'),fEl=document.getElementById('ftC');
-  if(!wData.length)wEl.innerHTML='<div style="color:#888888;font-size:0.76rem;font-weight:600">尚無體重資料</div>';
+  if(!wData.length)wEl.innerHTML='<div style="color:#888888;font-size:0.76rem;font-weight:600">尚無体重资料</div>';
   else{
     const mx=Math.max(...wData.map(d=>d.w)),mn=Math.min(...wData.map(d=>d.w)),rng=mx-mn||1;
     wEl.innerHTML=wData.map(d=>`<div class="bw"><div class="b" style="height:${((d.w-mn)/rng*80+10).toFixed(0)}%"></div><div class="bl">${d.w}</div></div>`).join('');
     document.getElementById('avgW').textContent=(wData.reduce((s,d)=>s+d.w,0)/wData.length).toFixed(1)+' kg';
     document.getElementById('latW').textContent=wData[wData.length-1].w+' kg';
   }
-  if(!fData.length)fEl.innerHTML='<div style="color:#888888;font-size:0.76rem;font-weight:600">尚無體脂資料</div>';
+  if(!fData.length)fEl.innerHTML='<div style="color:#888888;font-size:0.76rem;font-weight:600">尚無体脂资料</div>';
   else{
     const mx=Math.max(...fData.map(d=>d.f)),mn=Math.min(...fData.map(d=>d.f)),rng=mx-mn||1;
     fEl.innerHTML=fData.map(d=>`<div class="bw"><div class="b" style="height:${((d.f-mn)/rng*80+10).toFixed(0)}%;background:linear-gradient(180deg,#C0392B,#FF4444)"></div><div class="bl">${d.f}%</div></div>`).join('');
@@ -2034,7 +2034,7 @@ function renderCustomFoods(){
         <span class="ftag cb">碳${f.cb}g</span>
       </div>
       <button class="cf-del" onclick="event.stopPropagation();delCustomFood(${i})">✕</button>
-    </div>`).join(''):'<div style="font-size:0.76rem;color:#888888;text-align:center;padding:8px">還沒有儲存常吃食物</div>';
+    </div>`).join(''):'<div style="font-size:0.76rem;color:#888888;text-align:center;padding:8px">还没有储存常吃食物</div>';
 }
 function toggleSaveFoodForm(){
   const f=document.getElementById('saveFoodForm');
@@ -2045,14 +2045,14 @@ function saveCustomFood(){
   const c=parseFloat(document.getElementById('sfCal').value)||0;
   const p=parseFloat(document.getElementById('sfPro').value)||0;
   const cb=parseFloat(document.getElementById('sfCb').value)||0;
-  if(!n){toast('請輸入食物名稱');return;}
+  if(!n){toast('請输入食物名称');return;}
   const custom=gd('customFoods',[]);
   custom.push({n,c,p,cb});
   sd('customFoods',custom);
   document.getElementById('sfName').value='';document.getElementById('sfCal').value='';
   document.getElementById('sfPro').value='';document.getElementById('sfCb').value='';
   document.getElementById('saveFoodForm').style.display='none';
-  renderCustomFoods();toast(`已儲存「${n}」到常吃食物`);
+  renderCustomFoods();toast(`已储存「${n}」到常吃食物`);
 }
 function useCustomFood(i){
   const custom=gd('customFoods',[]);const f=custom[i];if(!f)return;
@@ -2060,7 +2060,7 @@ function useCustomFood(i){
   fEl.value=f.n;fEl.dataset.c=f.c;fEl.dataset.p=f.p;fEl.dataset.cb=f.cb;
   document.getElementById('cCal').value=f.c;
   document.getElementById('fsearch').value=f.n;
-  toast(`已選擇「${f.n}」，可調整份數後按 ＋`);
+  toast(`已选择「${f.n}」，可調整份数後按 ＋`);
 }
 function delCustomFood(i){
   const custom=gd('customFoods',[]);custom.splice(i,1);sd('customFoods',custom);renderCustomFoods();
@@ -2074,7 +2074,7 @@ function openAddExModal(){
 
 function saveCustomEx(){
   const name=document.getElementById('exName').value.trim();
-  if(!name){toast('請輸入動作名稱');return;}
+  if(!name){toast('請输入動作名称');return;}
   const catSel=document.getElementById('exCatSel').value;
   const catNew=document.getElementById('exCatNew').value.trim();
   const cat=catNew||catSel;
@@ -2085,15 +2085,15 @@ function saveCustomEx(){
   const bodyWt=document.getElementById('exBodywt').checked;
   // Build weight array
   let weights=[];
-  if(bodyWt)weights.push('自體');
+  if(bodyWt)weights.push('自体');
   for(let w=wmin;w<=wmax;w+=wstep)weights.push(w);
-  if(!weights.length)weights=['自體'];
+  if(!weights.length)weights=['自体'];
 
   const custom=gd('customEx',{});
   if(!custom[cat])custom[cat]=[];
   // Check for duplicate
   if(custom[cat].find(e=>e.n===name)||(EX_BUILTIN[cat]||[]).find(e=>e.n===name)){
-    toast('此動作名稱已存在');return;
+    toast('此動作名称已存在');return;
   }
   const id='cx_'+Date.now();
   custom[cat].push({id,n:name,m:muscle||cat,w:weights,custom:true});
@@ -2119,8 +2119,8 @@ function renderCustomExList(){
   const el=document.getElementById('customExList');
   if(!el)return;
   const allCustom=Object.entries(custom).flatMap(([cat,exs])=>exs.map(e=>({...e,cat})));
-  if(!allCustom.length){el.innerHTML='<div style="font-size:0.76rem;color:#888888;text-align:center">尚無自訂動作</div>';return;}
-  el.innerHTML='<div style="font-size:0.75rem;font-weight:800;color:#888888;margin-bottom:6px">已儲存的自訂動作</div>'+
+  if(!allCustom.length){el.innerHTML='<div style="font-size:0.76rem;color:#888888;text-align:center">尚無自订動作</div>';return;}
+  el.innerHTML='<div style="font-size:0.75rem;font-weight:800;color:#888888;margin-bottom:6px">已储存的自订動作</div>'+
     allCustom.map(e=>`
     <div style="display:flex;align-items:center;gap:8px;background:#111;border-radius:9px;padding:7px 10px;margin-bottom:4px">
       <div style="flex:1">
@@ -2190,9 +2190,9 @@ function filterFoodEdit(q){
           <span class="ftag cb">碳${f.cb}g</span>
         </div>
       </div>
-      <button onclick="startFoodItemEdit('${f._type}',${f._idx})" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:7px;padding:5px 10px;font-family:'Nunito',sans-serif;font-size:0.74rem;font-weight:800;cursor:pointer;color:#FFFFFF">編輯</button>
+      <button onclick="startFoodItemEdit('${f._type}',${f._idx})" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:7px;padding:5px 10px;font-family:'Nunito',sans-serif;font-size:0.74rem;font-weight:800;cursor:pointer;color:#FFFFFF">编辑</button>
       ${f._type==='custom'?`<button onclick="delFoodItem(${f._idx})" style="background:none;border:none;font-size:0.9rem;cursor:pointer;color:#E8E0D8">✕</button>`:''}
-    </div>`).join(''):'<div style="text-align:center;color:#888888;font-size:0.78rem;padding:12px">沒有符合的食物</div>';
+    </div>`).join(''):'<div style="text-align:center;color:#888888;font-size:0.78rem;padding:12px">没有符合的食物</div>';
 }
 
 function startFoodItemEdit(type,idx){
@@ -2204,7 +2204,7 @@ function startFoodItemEdit(type,idx){
     food=FOOD_DB[idx];
   }
   if(!food)return;
-  document.getElementById('feItemTitle').textContent=`編輯：${food.n}`;
+  document.getElementById('feItemTitle').textContent=`编辑：${food.n}`;
   document.getElementById('feItemName').value=food.n;
   document.getElementById('feItemCal').value=food.c;
   document.getElementById('feItemPro').value=food.p;
@@ -2218,7 +2218,7 @@ function saveFoodItemEdit(){
   const cal=parseFloat(document.getElementById('feItemCal').value)||0;
   const pro=parseFloat(document.getElementById('feItemPro').value)||0;
   const cb=parseFloat(document.getElementById('feItemCb').value)||0;
-  if(!name){toast('請輸入食物名稱');return;}
+  if(!name){toast('請输入食物名称');return;}
   if(feEditTarget.type==='custom'){
     const custom=gd('customFoods',[]);
     if(custom[feEditTarget.idx]){custom[feEditTarget.idx]={...custom[feEditTarget.idx],n:name,c:cal,p:pro,cb};}
@@ -2241,7 +2241,7 @@ function delFoodItem(idx){
   custom.splice(idx,1);
   sd('customFoods',custom);
   filterFoodEdit(document.getElementById('feSearch').value);
-  toast('已刪除');
+  toast('已删除');
 }
 
 // Apply saved food overrides on init
@@ -2254,22 +2254,22 @@ function applyFoodOverrides(){
 
 // ══ COMPLETION MODAL ══
 const ENCOURAGEMENTS=[
-  {e:'🔥',t:'Crushed it',s:'痛苦只是暫時的，放棄才是永遠的'},
-  {e:'⚡',t:'Power surge',s:'每一組都是對自己的宣戰'},
+  {e:'🔥',t:'Crushed it',s:'痛苦只是暂時的，放棄才是永远的'},
+  {e:'⚡',t:'Power surge',s:'每一组都是對自己的宣战'},
   {e:'💀',t:'No days off',s:'別人在休息，你在超越'},
-  {e:'🏆',t:'Locked in',s:'不是比昨天強，是比昨天更狠'},
-  {e:'⚔️',t:'Surge mode',s:'鐵是怎麼煉成的，你清楚'},
-  {e:'🔩',t:'Iron will',s:'汗水不會說謊'},
-  {e:'🎯',t:'On target',s:'目標從未消失，只是在等你追上'},
+  {e:'🏆',t:'Locked in',s:'不是比昨天强，是比昨天更狠'},
+  {e:'⚔️',t:'Surge mode',s:'铁是怎么炼成的，你清楚'},
+  {e:'🔩',t:'Iron will',s:'汗水不会说谎'},
+  {e:'🎯',t:'On target',s:'目标從未消失，只是在等你追上'},
 ];
 const COMPLETION_QUOTES=[
-  '痛苦是訊號，不是終點。繼續。',
-  '沒人說這很容易，但你做到了。',
-  '汗水落下的地方，力量正在生長。',
-  '別人跳過今天的訓練，你沒有。',
-  '每一組都是對身體的重新定義。',
+  '痛苦是訊號，不是終点。继续。',
+  '没人说這很容易，但你做到了。',
+  '汗水落下的地方，力量正在生长。',
+  '別人跳過今天的训练，你没有。',
+  '每一组都是對身体的重新定義。',
   '這一次的完成，是下一次突破的基礎。',
-  '真正的強者，是每天都選擇出現的人。',
+  '真正的强者，是每天都选择出現的人。',
 ];
 
 let currentLog=null;
@@ -2287,8 +2287,8 @@ function showCompletionModal(log,xp){
   const statsEl=document.getElementById('completionStats');
   statsEl.innerHTML=[
     {v:log.kcal||0,l:'消耗 kcal'},
-    {v:log.dur||0,l:'總分鐘'},
-    {v:`+${xp}`,l:'XP 獲得'},
+    {v:log.dur||0,l:'总分钟'},
+    {v:`+${xp}`,l:'XP 获得'},
   ].map(s=>`<div style="background:#1A1A1A;border-radius:11px;padding:10px;text-align:center">
     <div style="font-size:1.4rem;font-weight:900;color:#E8E0D8">${s.v}</div>
     <div style="font-size:0.62rem;font-weight:700;color:#888888">${s.l}</div>
@@ -2303,21 +2303,21 @@ function showCompletionModal(log,xp){
         const extra=s.extra?` (${s.extra})`:'';
         html+=`<div style="background:#111;border-radius:10px;padding:9px 12px;margin-bottom:5px">
           <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">${s.act}${extra}</div>
-          <div style="font-size:0.72rem;color:#888888;margin-top:2px">${s.dur} 分鐘・${s.kcal} kcal</div>
+          <div style="font-size:0.72rem;color:#888888;margin-top:2px">${s.dur} 分钟・${s.kcal} kcal</div>
         </div>`;
       } else if(s.type==='pilates'){
         const area=s.area?` · ${s.area}`:'';
         html+=`<div style="background:#111;border-radius:10px;padding:9px 12px;margin-bottom:5px">
           <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">皮拉提斯${area}</div>
-          <div style="font-size:0.72rem;color:#888888;margin-top:2px">${s.dur} 分鐘・${s.kcal} kcal</div>
+          <div style="font-size:0.72rem;color:#888888;margin-top:2px">${s.dur} 分钟・${s.kcal} kcal</div>
         </div>`;
       } else if(s.type==='weights'&&s.exDetails?.length){
         // Get unique categories for this session
         const cats=[...new Set(s.cats||[])];
-        const catLabels=cats.join(' · ')||'重訓';
+        const catLabels=cats.join(' · ')||'重训';
         html+=`<div style="background:#1A1A1A;border-radius:10px;padding:9px 12px;margin-bottom:5px">
           <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
-            <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">重訓</div>
+            <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">重训</div>
             ${cats.map(c=>`<span style="background:#222222;color:#E8E0D8;border-radius:6px;padding:2px 8px;font-size:0.66rem;font-weight:800">${c}</span>`).join('')}
           </div>`;
         s.exDetails.forEach(ex=>{
@@ -2327,14 +2327,14 @@ function showCompletionModal(log,xp){
             const setsStr=ex.sets.map(st=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join('　');
             html+=`<div style="margin-bottom:4px"><div style="font-size:0.78rem;font-weight:800;color:#E0E0E0">${ex.n}</div><div style="font-size:0.68rem;color:#888888">${muscle?muscle+' · ':''} ${setsStr}</div></div>`;
           } else {
-            html+=`<div style="margin-bottom:4px"><div style="font-size:0.78rem;font-weight:800;color:#E0E0E0">${ex.n}</div><div style="font-size:0.68rem;color:#888888">${muscle?muscle+' · ':''}${ex.sc||3}組×${ex.r||12}次</div></div>`;
+            html+=`<div style="margin-bottom:4px"><div style="font-size:0.78rem;font-weight:800;color:#E0E0E0">${ex.n}</div><div style="font-size:0.68rem;color:#888888">${muscle?muscle+' · ':''}${ex.sc||3}组×${ex.r||12}次</div></div>`;
           }
         });
         html+='</div>';
       } else if(s.type==='running'){
         html+=`<div style="background:#111;border-radius:10px;padding:9px 12px;margin-bottom:5px">
           <div style="font-size:0.82rem;font-weight:800;color:#E0E0E0">🏃 跑步</div>
-          <div style="font-size:0.72rem;color:#888888;margin-top:2px">${s.dist?s.dist.toFixed(2)+'km · ':''} ${s.dur}分鐘 · ${s.kcal}kcal</div>
+          <div style="font-size:0.72rem;color:#888888;margin-top:2px">${s.dist?s.dist.toFixed(2)+'km · ':''} ${s.dur}分钟 · ${s.kcal}kcal</div>
         </div>`;
       }
     });
@@ -2372,18 +2372,18 @@ function buildTodoItems(ds,log,plan){
       else if(s.type==='pilates')items.push({title:`皮拉提斯${s.area?' · '+s.area:''}`,sub:`${s.dur}分・${s.kcal}kcal`,done:false,kcal:s.kcal||0});
       else if(s.type==='weights'&&s.exDetails?.length)
         s.exDetails.forEach(ex=>{
-          const setsStr=ex.sets?.length>0?ex.sets.map((st,i)=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}組×${ex.r||12}次`;
+          const setsStr=ex.sets?.length>0?ex.sets.map((st,i)=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}组×${ex.r||12}次`;
           items.push({title:ex.n,sub:setsStr,done:false,kcal:0});
         });
     });
   } else if(plan?.sessions?.length){
     plan.sessions.forEach(s=>{
-      if(s.type==='aerobic')items.push({title:`${s.act}${s.extra?' ('+s.extra+')':''}`,sub:`計劃 ${s.dur}分`,done:false});
-      else if(s.type==='pilates')items.push({title:`皮拉提斯${s.area?' · '+s.area:''}`,sub:`計劃 ${s.dur}分`,done:false});
-      else if(s.type==='weights')items.push({title:s.act.replace('訓練','')+'（重訓）',sub:'今日計劃',done:false});
+      if(s.type==='aerobic')items.push({title:`${s.act}${s.extra?' ('+s.extra+')':''}`,sub:`计划 ${s.dur}分`,done:false});
+      else if(s.type==='pilates')items.push({title:`皮拉提斯${s.area?' · '+s.area:''}`,sub:`计划 ${s.dur}分`,done:false});
+      else if(s.type==='weights')items.push({title:s.act.replace('训练','')+'（重训）',sub:'今日计划',done:false});
     });
   } else if(plan?.acts?.length){
-    plan.acts.forEach(act=>items.push({title:act,sub:'今日計劃',done:false}));
+    plan.acts.forEach(act=>items.push({title:act,sub:'今日计划',done:false}));
   }
   return items;
 }
@@ -2397,7 +2397,7 @@ function deletePlanItem(ds,idx){
   if(!plan.sessions?.length&&!plan.acts?.length)delete S.weekPlan[ds];
   sd('weekPlan',S.weekPlan);
   openInlineDay=null;const _wid=document.getElementById('wkInlineDetail');if(_wid)_wid.style.display='none';
-  renderWeek();toast('已刪除');
+  renderWeek();toast('已删除');
 }
 
 
@@ -2418,7 +2418,7 @@ function startTracking(){
   trackingActive=true;
   const _tb=document.getElementById('trackBtn');if(_tb)_tb.textContent='停止';
   if(_tb)_tb.style.background='linear-gradient(135deg,#8B0000,#CC2200)';
-  document.getElementById('trackStatus').textContent='追蹤中...';
+  document.getElementById('trackStatus').textContent='追踪中...';
   document.getElementById('trackNote').textContent='';
   // Timer
   trackInterval=setInterval(()=>{
@@ -2456,7 +2456,7 @@ function startTracking(){
       }
     },{enableHighAccuracy:true,timeout:10000,maximumAge:1000});
   } else {
-    document.getElementById('trackNote').textContent='此裝置不支援 GPS，僅計時與計步';
+    document.getElementById('trackNote').textContent='此装置不支援 GPS，僅计時與计步';
   }
   // Step counter via accelerometer
   try{
@@ -2472,7 +2472,7 @@ function startTracking(){
 
 function stopTracking(){
   trackingActive=false;
-  const _tb2=document.getElementById('trackBtn');if(_tb2)_tb2.textContent='開始';
+  const _tb2=document.getElementById('trackBtn');if(_tb2)_tb2.textContent='开始';
   document.getElementById('trackBtn').style.background='linear-gradient(135deg,#E63946,#FF4444)';
   document.getElementById('trackStatus').textContent='已停止';
   clearInterval(trackInterval);
@@ -2518,7 +2518,7 @@ function resetTracking(){
   document.getElementById('trackSteps').textContent='0';
   document.getElementById('trackCalTrack').textContent='消耗 -- kcal';
   document.getElementById('trackPace').textContent='配速 --';
-  document.getElementById('trackStatus').textContent='等待開始';
+  document.getElementById('trackStatus').textContent='等待开始';
   const cv=document.getElementById('trackCanvas');
   if(cv){const ctx=cv.getContext('2d');ctx.clearRect(0,0,cv.width,cv.height);}
 }
@@ -2607,7 +2607,7 @@ function renderTrackHistory(){
   const history=JSON.parse(localStorage.getItem('fl_track_history')||'[]');
   const el=document.getElementById('trackHistory');
   if(!el)return;
-  if(!history.length){el.innerHTML='<div style="color:#888888;font-size:0.78rem">尚無跑步紀錄</div>';return;}
+  if(!history.length){el.innerHTML='<div style="color:#888888;font-size:0.78rem">尚無跑步纪录</div>';return;}
   el.innerHTML=history.slice(0,5).map(r=>`
     <div style="background:rgba(255,255,255,0.10);border-radius:11px;padding:10px 12px;margin-bottom:5px;display:flex;align-items:center;gap:10px;border:1px solid #2A2A2A">
       <div style="flex:1">
@@ -2626,8 +2626,8 @@ function openShareCard(log){
   const totalKcal=log?.kcal||0,totalDur=log?.dur||0,totalActs=(log?.acts||[]).length;
   document.getElementById('shareCardStats').innerHTML=[
     {v:totalKcal,l:'消耗 kcal'},
-    {v:totalDur?totalDur+'分':'--',l:'訓練時長'},
-    {v:totalActs,l:'訓練項目'},
+    {v:totalDur?totalDur+'分':'--',l:'训练時长'},
+    {v:totalActs,l:'训练项目'},
   ].map(s=>`<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:10px;text-align:center;backdrop-filter:blur(4px)">
     <div style="font-size:1.3rem;font-weight:900;color:#fff">${s.v}</div>
     <div style="font-size:0.6rem;font-weight:700;color:rgba(255,255,255,0.7);margin-top:2px">${s.l}</div>
@@ -2640,13 +2640,13 @@ function openShareCard(log){
       else if(s.type==='pilates')sessHtml+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">皮拉提斯${s.area?' · '+s.area:''} <span style="color:rgba(255,255,255,0.65)">${s.dur}分</span></div>`;
       else if(s.type==='weights'&&s.exDetails?.length)
         s.exDetails.forEach(ex=>{
-          const setsStr=ex.sets?.length>0?ex.sets.map(st=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}組×${ex.r||12}次`;
+          const setsStr=ex.sets?.length>0?ex.sets.map(st=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}组×${ex.r||12}次`;
           sessHtml+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">${ex.n} <span style="color:rgba(255,255,255,0.65)">${setsStr}</span></div>`;
         });
     });
   }
   document.getElementById('shareCardSessions').innerHTML=sessHtml;
-  const quotes=['比昨天的自己強一點點，就是勝利','每一滴汗水，都是蛻變的開始','持續出現，就是最強的力量'];
+  const quotes=['比昨天的自己强一点点，就是勝利','每一滴汗水，都是蛻變的开始','持续出現，就是最强的力量'];
   document.getElementById('shareCardQuote').textContent=quotes[Math.floor(Math.random()*quotes.length)];
   document.getElementById('shareMo').classList.add('open');
 }
@@ -2662,10 +2662,10 @@ async function downloadShareCard(){
       link.download=`Sovereign_${today()}.png`;
       link.href=canvas.toDataURL('image/png');
       link.click();
-      toast('已儲存！');
-    }catch(e){toast('截圖失敗，請使用系統截圖');}
+      toast('已储存！');
+    }catch(e){toast('截圖失敗，請使用系统截圖');}
   } else {
-    toast('請使用系統截圖功能（長按畫面）');
+    toast('請使用系统截圖功能（长按畫面）');
   }
 }
 
@@ -2692,8 +2692,8 @@ function openDayCard(ds){
   const dcEmojis=['🔥','⚡','💀','⚔️','🏆','🎯'];
   document.getElementById('dcEmoji').textContent=dcEmojis[Math.floor(Math.random()*dcEmojis.length)];
   document.getElementById('dcStats').innerHTML=[
-    {v:log.dur||0,l:'分鐘'},
-    {v:(log.sessions||[]).reduce((s,se)=>s+(se.type==='weights'?se.exDetails?.length||0:1),0)||0,l:'訓練項目'},
+    {v:log.dur||0,l:'分钟'},
+    {v:(log.sessions||[]).reduce((s,se)=>s+(se.type==='weights'?se.exDetails?.length||0:1),0)||0,l:'训练项目'},
   ].map(s=>`<div style="background:#1A1A1A;border-radius:11px;padding:10px;text-align:center">
     <div style="font-size:1.4rem;font-weight:900;color:#E8E0D8">${s.v}</div>
     <div style="font-size:0.58rem;font-weight:700;color:#888888;margin-top:2px">${s.l}</div>
@@ -2714,11 +2714,11 @@ function openDayCard(ds){
     } else if(s.type==='weights'&&s.exDetails?.length){
       html+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
-          <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">重訓</div>
+          <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">重训</div>
           ${(s.cats||[]).map(c=>`<span style="background:#222222;color:#E8E0D8;border-radius:5px;padding:2px 8px;font-size:0.62rem;font-weight:800">${c}</span>`).join('')}
         </div>`;
       s.exDetails.forEach(ex=>{
-        const setsStr=ex.sets?.length>0?ex.sets.map(st=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}組×${ex.r||12}次`;
+        const setsStr=ex.sets?.length>0?ex.sets.map(st=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}组×${ex.r||12}次`;
         html+=`<div style="margin-bottom:3px"><div style="font-size:0.76rem;font-weight:800;color:#E0E0E0">${ex.n}</div><div style="font-size:0.66rem;color:#888888">${ex.m?ex.m+' · ':''}${setsStr}</div></div>`;
       });
       html+='</div>';
@@ -2736,11 +2736,11 @@ function openDayCard(ds){
 // ══ LEVEL UP ══
 const LEVEL_EMOJIS=['⚡','🔥','⚔️','💀','🏆','👁️'];
 const LEVELUP_QUOTES=[
-  '力量不是天生的，是一組一組打出來的。',
-  '等級只是數字，但你的進化是真實的。',
-  '沒有捷徑。只有重量、汗水和意志。',
-  '你剛超越了昨天的自己，繼續。',
-  '鐵不會說謊，結果不會欺騙你。',
+  '力量不是天生的，是一组一组打出來的。',
+  '等级只是数字，但你的進化是真实的。',
+  '没有捷径。只有重量、汗水和意志。',
+  '你剛超越了昨天的自己，继续。',
+  '铁不会说谎，结果不会欺騙你。',
 ];
 function checkLevelUp(oldXp, newXp){
   let oldLv=0,newLv=0;
@@ -2753,7 +2753,7 @@ function checkLevelUp(oldXp, newXp){
     document.getElementById('lvlUpTitle').textContent=lvl.n;
     document.getElementById('lvlUpSub').textContent='你已升到 Lv.' + (newLv+1) + '！';
     document.getElementById('lvlUpXP').textContent=newLv<LEVELS.length-1?
-      `距離下一級 ${lvl.n} 還差 ${nextLvl.x-newXp} XP`:'已達最高等級 👑';
+      `距離下一级 ${lvl.n} 还差 ${nextLvl.x-newXp} XP`:'已达最高等级 👑';
     const q=LEVELUP_QUOTES[Math.floor(Math.random()*LEVELUP_QUOTES.length)];
     const qEl=document.getElementById('lvlUpQuote');if(qEl)qEl.textContent=q;
     setTimeout(()=>document.getElementById('levelUpMo').classList.add('open'),500);
@@ -2761,24 +2761,24 @@ function checkLevelUp(oldXp, newXp){
 }
 
 const LV_MSGS=[
-  '','健身初心者','訓練的節奏開始穩了','規律訓練讓你變強','你已超越大多數人','你是自己的健身教練','你就是傳說'
+  '','健身初心者','训练的節奏开始穩了','規律训练让你變强','你已超越大多数人','你是自己的健身教练','你就是传说'
 ];
 function showLevelUp(lv){
   const lvData=LEVELS[lv]||{};
   document.getElementById('lvUpTitle').textContent=lvData.n||'新境界';
-  document.getElementById('lvUpSub').textContent=LV_MSGS[lv]||'繼續突破自己的極限！';
+  document.getElementById('lvUpSub').textContent=LV_MSGS[lv]||'继续突破自己的極限！';
   document.getElementById('lvUpIcon').textContent=['','🌱','⚡','💪','🔥','🏆','👑'][lv]||'🌟';
   document.getElementById('levelUpMo').classList.add('open');
 }
 
 // ══ TUTORIAL ══
 const TUTORIAL_STEPS=[
-  {e:'⚡',t:'歡迎使用 SurgeX',d:'你的高強度訓練記錄工具。\\n點下一步快速認識所有功能！',tab:'home',target:null},
-  {e:'🏋️',t:'重訓記錄',d:'選擇動作分類（肩背胸/臀腿/核心）\\n展開動作→輸入重量→記錄這組\\n完成後點「儲存訓練記錄」',tab:'home',target:'catTabs'},
-  {e:'🔥',t:'打勾才算完成',d:'儲存後手動打勾週計劃的每個項目\\n全部打勾才計入訓練次數和 kcal',tab:'home',target:'wkDayTabs'},
-  {e:'🥩',t:'飲食追蹤',d:'搜尋食物後按「＋」加入今日飲食\\n追蹤蛋白質攝取',tab:'diet',target:'fsearch'},
-  {e:'📋',t:'自訂食物',d:'點「+ 新增」加入自己的飲食\\n輸入名稱和熱量即可儲存',tab:'diet',target:'saveFoodForm'},
-  {e:'🏆',t:'開始衝刺！',d:'第一筆訓練從現在開始。\\n右上角燈泡可隨時重看導覽',tab:'home',target:null},
+  {e:'⚡',t:'欢迎使用 SurgeX',d:'你的高强度训练记录工具。\\n点下一步快速认识所有功能！',tab:'home',target:null},
+  {e:'🏋️',t:'重训记录',d:'选择動作分類（肩背胸/臀腿/核心）\\n展开動作→输入重量→记录這组\\n完成後点「储存训练记录」',tab:'home',target:'catTabs'},
+  {e:'🔥',t:'打勾才算完成',d:'储存後手動打勾周计划的每個项目\\n全部打勾才计入训练次数和 kcal',tab:'home',target:'wkDayTabs'},
+  {e:'🥩',t:'饮食追踪',d:'搜寻食物後按「＋」加入今日饮食\\n追踪蛋白质攝取',tab:'diet',target:'fsearch'},
+  {e:'📋',t:'自订食物',d:'点「+ 新增」加入自己的饮食\\n输入名称和热量即可储存',tab:'diet',target:'saveFoodForm'},
+  {e:'🏆',t:'开始冲刺！',d:'第一笔训练從現在开始。\\n右上角燈泡可隨時重看导览',tab:'home',target:null},
 ];
 let tutStep=0;
 
@@ -2830,7 +2830,7 @@ function renderTutSpotlight(){
   // Last step
   const isLast=tutStep===TUTORIAL_STEPS.length-1;
   const nextBtn=document.getElementById('tutNextBtn2');
-  if(nextBtn)nextBtn.textContent=isLast?'開始！':'下一步 →';
+  if(nextBtn)nextBtn.textContent=isLast?'开始！':'下一步 →';
   const skipBtn=document.getElementById('tutSkipBtn2');
   if(skipBtn)skipBtn.style.display=isLast?'none':'block';
 }
@@ -2909,15 +2909,15 @@ function saveProfile(){
   sd('name',S.name);sd('profile',S.profile);updateNameBtn();
   document.getElementById('calGoalLbl').textContent=S.profile.cal;
   document.getElementById('waterGoalLbl').textContent=S.profile.wt;
-  toast('個人資料已儲存');
+  toast('個人资料已储存');
 }
 // ══ WELCOME CEREMONY ══
 const CEREMONY_QUOTES=[
-  '沒有弱者的藉口，只有強者的行動。',
+  '没有弱者的藉口，只有强者的行動。',
   '今天的痛，是明天的力量。',
-  '開始就是最難的一步，你已經跨出去了。',
-  '強大是選擇，也是習慣。',
-  '別問自己能不能，問自己要不要。',
+  '开始就是最难的一步，你已經跨出去了。',
+  '强大是选择，也是习惯。',
+  '別问自己能不能，问自己要不要。',
 ];
 
 function openNameMo(){
@@ -2951,7 +2951,7 @@ function welcomeSubmit(){
   const n=document.getElementById('welNameInput').value.trim();
   if(!n){
     const hint=document.getElementById('welHint');
-    if(hint){hint.textContent='請輸入你的名字';hint.style.color='rgba(255,180,180,0.8)';}
+    if(hint){hint.textContent='請输入你的名字';hint.style.color='rgba(255,180,180,0.8)';}
     document.getElementById('welNameInput')?.focus();
     return;
   }
