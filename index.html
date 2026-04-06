@@ -21,7 +21,7 @@
   --sh:0 4px 20px rgba(230,57,70,0.18);--r:14px;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-spacing:1px;min-height:100vh;color:#E0E0E0;padding-bottom:80px;}
+body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-spacing:0.012em;min-height:100vh;color:#E0E0E0;padding-bottom:80px;}
 
 /* ── HEADER ── */
 .hdr{background:linear-gradient(135deg,#1A0A0A 0%,#6B0000 50%,#E63946 100%);padding:18px 18px 50px;position:relative;overflow:hidden;}
@@ -31,7 +31,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;font-style:italic;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.12);letter-spacing:1px;}
 .nametag{color:#fff;font-weight:800;font-size:0.8rem;background:rgba(255,255,255,0.26);padding:5px 11px;border-radius:18px;border:none;cursor:pointer;font-family:'Nunito',sans-serif;}
 .hdr-info{position:relative;z-index:1;margin-top:8px;}
-.streak-txt{color:rgba(240,220,200,0.9);font-size:0.76rem;font-weight:600;margin-bottom:10px;letter-spacing:1px;line-height:1.8;}
+.streak-txt{color:rgba(240,220,200,0.9);font-size:0.76rem;font-weight:600;margin-bottom:10px;letter-spacing:0.02em;line-height:1.8;}
 .xp-row{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
 .xp-lbl{color:rgba(240,230,220,0.95);font-size:0.72rem;font-weight:800;white-space:nowrap;}
 .xp-bar{flex:1;height:7px;background:rgba(255,0,0,0.2);border-radius:7px;overflow:hidden;}
@@ -311,7 +311,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .wdi-set{font-size:0.68rem;color:#888888;font-weight:600;margin-top:1px;}
 
 /* ── WELCOME OVERLAY ── */
-.welcome-overlay{position:fixed;inset:0;background:linear-gradient(160deg,#0A0A0A 0%,#1A1A1A 50%,#400000 100%);
+.welcome-overlay{position:fixed;inset:0;background:linear-gradient(180deg,#080808 0%,#0D0D0D 45%,#3A0000 58%,#6B0000 75%,#8B0000 100%);
   z-index:500;display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:32px;text-align:center;transition:opacity 1s ease;}
 .welcome-overlay.hiding{opacity:0;pointer-events:none;}
