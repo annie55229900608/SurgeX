@@ -86,14 +86,14 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .act-label{font-size:0.88rem;font-weight:700;color:#E0E0E0;flex:1;}
 .act-row.sel .act-label{color:#E8E0D8;}
 .dur-mini{display:flex;align-items:center;gap:4px;}
-.dur-mini input{width:52px;border:2px solid #333;border-radius:8px;padding:5px 6px;
-  font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;background:#1C1C1E;text-align:center;outline:none;}
+.dur-mini input{width:52px;border:2px solid rgba(255,255,255,0.18);border-radius:8px;padding:5px 6px;
+  font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;background:rgba(255,255,255,0.10);text-align:center;outline:none;}
 .dur-mini input:focus{border-color:#E8E0D8;}
-.mini-select{border:2px solid #333;border-radius:8px;padding:5px 7px;font-family:'Nunito',sans-serif;
-  font-size:0.78rem;font-weight:700;color:#E0E0E0;background:#1C1C1E;outline:none;cursor:pointer;}
+.mini-select{border:2px solid rgba(255,255,255,0.18);border-radius:8px;padding:5px 7px;font-family:'Nunito',sans-serif;
+  font-size:0.78rem;font-weight:700;color:#E0E0E0;background:rgba(255,255,255,0.10);outline:none;cursor:pointer;}
 .mini-select:focus{border-color:#BBBBBB;}
 .plan-cat-chip{padding:7px 14px;border-radius:20px;font-size:0.8rem;font-weight:700;cursor:pointer;
-  border:2px solid #2A2A2A;background:#1C1C1E;color:#888888;transition:all .18s;user-select:none;}
+  border:2px solid #2A2A2A;background:rgba(255,255,255,0.10);color:#888888;transition:all .18s;user-select:none;}
 .plan-cat-chip.sel{background:#E63946;color:#fff;border-color:#E8E0D8;}
 .dur-mini span{font-size:0.7rem;color:#888888;font-weight:600;}
 
@@ -107,7 +107,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .cat-tabs{display:flex;gap:5px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px;}
 .cat-tabs::-webkit-scrollbar{display:none;}
 .ctab{flex-shrink:0;padding:6px 13px;border-radius:16px;font-size:0.76rem;font-weight:800;
-  border:none;cursor:pointer;font-family:'Nunito',sans-serif;background:#2A2A2A;color:#888888;transition:all .18s;}
+  border:none;cursor:pointer;font-family:'Nunito',sans-serif;background:rgba(255,255,255,0.10);color:#888888;transition:all .18s;}
 .ctab.active{background:linear-gradient(160deg,#0D0D0D 0%,#3A0000 50%,#8B0000 100%);color:#fff;}
 
 /* ── EXERCISE CARDS ── */
@@ -149,12 +149,12 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 /* ── CALENDAR ── */
 .cal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
-.cal-nav{background:#2A2A2A;color:#FFFFFF;border:none;border-radius:7px;padding:4px 10px;cursor:pointer;font-size:1rem;color:#E0E0E0;}
+.cal-nav{background:rgba(255,255,255,0.10);color:#FFFFFF;border:none;border-radius:7px;padding:4px 10px;cursor:pointer;font-size:1rem;color:#E0E0E0;}
 .cal-m{font-weight:900;font-size:0.9rem;color:#E0E0E0;}
 .cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;}
 .cal-dl{text-align:center;font-size:0.6rem;font-weight:800;color:#888888;padding:3px 0;}
-.cal-c{border-radius:8px;padding:4px 2px;min-height:42px;background:#2A2A2A;text-align:center;
-  font-size:0.7rem;font-weight:700;color:#888888;cursor:pointer;transition:all .18s;}
+.cal-c{border-radius:8px;padding:4px 2px;min-height:42px;background:rgba(255,255,255,0.10);text-align:center;
+  font-size:0.7rem;font-weight:700;color:#FFFFFF;cursor:pointer;transition:all .18s;}
 .cal-c:hover{background:#222222;}
 .cal-c.empty{background:transparent;cursor:default;}
 .cal-c.today{background:linear-gradient(160deg,#0D0D0D 0%,#3A0000 50%,#8B0000 100%);color:#fff;font-weight:900;}
@@ -163,34 +163,34 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .dot{width:4px;height:4px;border-radius:50%;}
 .dot.p{background:var(--acc);}
 .dot.b{background:#FF4444;}
-.cal-c .cal-acts{font-size:0.48rem;color:#888888;font-weight:600;line-height:1.3;margin-top:1px;}
+.cal-c .cal-acts{font-size:0.48rem;color:#FFFFFF;font-weight:700;line-height:1.3;margin-top:1px;}
 
 /* ── WATER ── */
-.water-select{border:2px solid #333;border-radius:10px;padding:9px 12px;font-family:'Nunito',sans-serif;
-  font-size:0.88rem;font-weight:700;color:#E0E0E0;background:#1C1C1E;outline:none;width:100%;}
+.water-select{border:2px solid rgba(255,255,255,0.18);border-radius:10px;padding:9px 12px;font-family:'Nunito',sans-serif;
+  font-size:0.88rem;font-weight:700;color:#E0E0E0;background:rgba(255,255,255,0.10);outline:none;width:100%;}
 .water-select:focus{border-color:#E8E0D8;}
-.wb{height:7px;background:#2A2A2A;border-radius:7px;overflow:hidden;margin-top:8px;}
+.wb{height:7px;background:rgba(255,255,255,0.10);border-radius:7px;overflow:hidden;margin-top:8px;}
 .wbf{height:100%;background:linear-gradient(90deg,#8B0000,#E63946);border-radius:7px;transition:width .4s;}
 
 /* ── MACRO BAR ── */
 .macro-bar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px;}
-.macro-item{background:#2A2A2A;border-radius:11px;padding:9px;text-align:center;border:1px solid #3A3A3A;}
-.macro-item.blue{background:#1C1C1E;}
+.macro-item{background:rgba(255,255,255,0.10);border-radius:11px;padding:9px;text-align:center;border:1px solid #3A3A3A;}
+.macro-item.blue{background:rgba(255,255,255,0.10);}
 .macro-item.green{background:#1A1A1A;}
 .macro-val{font-size:1.1rem;font-weight:900;color:#E8E0D8;}
 .macro-item.blue .macro-val{color:#BBBBBB;}
 .macro-item.green .macro-val{color:#FFA040;}
 .macro-lbl{font-size:0.6rem;font-weight:700;color:#888888;margin-top:1px;}
 .cal-prog-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
-.cal-prog-bar{flex:1;height:6px;background:#1C1C1E;border-radius:6px;overflow:hidden;}
+.cal-prog-bar{flex:1;height:6px;background:rgba(255,255,255,0.10);border-radius:6px;overflow:hidden;}
 .cal-prog-fill{height:100%;background:linear-gradient(90deg,var(--acc),#FF4444);border-radius:6px;transition:width .4s;}
 
 /* ── FOOD SEARCH ── */
 .fswrap{position:relative;margin-bottom:7px;}
-.fsearch{width:100%;border:2px solid #3A3A3A;border-radius:10px;padding:8px 12px;
-  font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;background:#242424;outline:none;}
+.fsearch{width:100%;border:2px solid rgba(255,255,255,0.18);border-radius:10px;padding:8px 12px;
+  font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;background:rgba(255,255,255,0.10);outline:none;}
 .fsearch:focus{border-color:#C0392B;}
-.fdrop{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#2A2A2A;border:1px solid #3A3A3A;border-radius:10px;
+.fdrop{position:absolute;top:calc(100% + 4px);left:0;right:0;background:rgba(255,255,255,0.10);border:1px solid #3A3A3A;border-radius:10px;
   box-shadow:0 8px 24px rgba(130,130,190,0.2);z-index:50;max-height:220px;overflow-y:auto;display:none;}
 .fdrop.open{display:block;}
 .fopt{padding:9px 12px;cursor:pointer;font-size:0.8rem;font-weight:700;color:#E0E0E0;display:flex;justify-content:space-between;gap:8px;}
@@ -203,13 +203,13 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 /* food add row */
 .fadd-row{display:grid;grid-template-columns:1fr 60px 60px 34px;gap:5px;margin-bottom:6px;align-items:center;}
-.fadd-input{border:2px solid #333;border-radius:8px;padding:7px 8px;font-family:'Nunito',sans-serif;font-size:0.8rem;font-weight:700;color:#E0E0E0;background:#111;outline:none;width:100%;}
+.fadd-input{border:2px solid rgba(255,255,255,0.18);border-radius:8px;padding:7px 8px;font-family:'Nunito',sans-serif;font-size:0.8rem;font-weight:700;color:#E0E0E0;background:rgba(255,255,255,0.10);outline:none;width:100%;}
 .fadd-input:focus{border-color:#C0392B;}
-.fadd-btn{background:#E63946;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;height:34px;}
+.fadd-btn{background:#CC2200;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;height:34px;}
 .fadd-lbl{font-size:0.6rem;font-weight:700;color:#888888;text-align:center;margin-top:1px;}
 
 /* meal item */
-.mi{background:#2A2A2A;border-radius:11px;padding:9px 11px;display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.mi{background:rgba(255,255,255,0.10);border-radius:11px;padding:9px 11px;display:flex;align-items:center;gap:7px;margin-bottom:5px;}
 .mi-ic{font-size:1.1rem;}
 .mi-inf{flex:1;}
 .mi-n{font-weight:800;font-size:0.8rem;color:#E0E0E0;}
@@ -230,7 +230,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 /* ── ACHIEVEMENTS ── */
 .ach-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
-.ach{border-radius:12px;padding:11px;text-align:center;background:#2A2A2A;border:1px solid #3A3A3A;}
+.ach{border-radius:12px;padding:11px;text-align:center;background:rgba(255,255,255,0.10);border:1px solid #3A3A3A;}
 .ach.on{background:#222222;border-color:#E8E0D8;}
 .ach-ic{font-size:1.5rem;margin-bottom:3px;filter:grayscale(100%);}
 .ach.on .ach-ic{filter:none;}
@@ -239,7 +239,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 /* ── LOG ── */
 .llist{display:flex;flex-direction:column;gap:5px;max-height:280px;overflow-y:auto;}
-.li{background:#2A2A2A;border:1px solid #3A3A3A;border-radius:11px;padding:9px 11px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px;}
+.li{background:rgba(255,255,255,0.10);border:1px solid #3A3A3A;border-radius:11px;padding:9px 11px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px;}
 .li-d{font-size:0.65rem;color:#888888;font-weight:700;}
 .li-a{font-size:0.76rem;font-weight:800;color:#E0E0E0;}
 .li-detail{font-size:0.64rem;color:#888888;font-weight:600;margin-top:2px;line-height:1.4;}
@@ -252,8 +252,8 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   box-shadow:0 16px 50px rgba(100,100,160,0.2);animation:mia .26s cubic-bezier(.4,0,.2,1);}
 @keyframes mia{from{transform:translateY(26px);opacity:0}to{transform:translateY(0);opacity:1}}
 .mtit{font-weight:900;font-size:0.95rem;color:#E0E0E0;margin-bottom:12px;}
-.minp{border:2px solid #383838;border-radius:10px;padding:9px 13px;font-family:'Nunito',sans-serif;
-  font-size:0.92rem;font-weight:700;color:#FFFFFF;background:#0A0A0A;outline:none;width:100%;margin-bottom:9px;}
+.minp{border:2px solid rgba(255,255,255,0.18);border-radius:10px;padding:9px 13px;font-family:'Nunito',sans-serif;
+  font-size:0.92rem;font-weight:700;color:#FFFFFF;background:rgba(255,255,255,0.10);outline:none;width:100%;margin-bottom:9px;}
 .mbtns{display:flex;gap:7px;margin-top:4px;}
 .mbtn{flex:1;padding:10px;border-radius:11px;border:none;font-family:'Nunito',sans-serif;font-weight:800;cursor:pointer;font-size:0.85rem;}
 .mbtn.pri{background:linear-gradient(160deg,#0D0D0D 0%,#3A0000 50%,#8B0000 100%);color:#fff;}
@@ -275,7 +275,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .cf-del{background:none;border:none;font-size:0.8rem;cursor:pointer;color:#888888;padding:0 2px;}
 .save-food-form{background:#242424;border-radius:12px;padding:12px;margin-top:8px;}
 .save-food-grid{display:grid;grid-template-columns:1fr 60px 60px 60px;gap:5px;align-items:end;}
-.save-food-input{border:2px solid #333;border-radius:8px;padding:7px 8px;font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;color:#E0E0E0;outline:none;width:100%;}
+.save-food-input{border:2px solid rgba(255,255,255,0.18);border-radius:8px;padding:7px 8px;font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;color:#FFFFFF;outline:none;width:100%;;background:rgba(255,255,255,0.10);}
 .save-food-input:focus{border-color:#C0392B;}
 .save-food-lbl{font-size:0.58rem;font-weight:700;color:#888888;margin-bottom:2px;}
 .save-food-btn{background:#FF4444;color:#fff;border:none;border-radius:8px;padding:8px 6px;font-family:'Nunito',sans-serif;font-size:0.72rem;font-weight:800;cursor:pointer;width:100%;}
@@ -325,7 +325,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   text-align:center;letter-spacing:.04em;backdrop-filter:blur(8px);transition:border-color .3s;}
 .wel-input::placeholder{color:rgba(255,255,255,0.3);}
 .wel-input:focus{border-color:rgba(255,255,255,0.7);}
-.wel-btn{margin-top:0;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);
+.wel-btn{margin-top:0;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.4);
   color:#fff;border-radius:50px;padding:13px 44px;font-family:'Nunito',sans-serif;font-weight:800;
   font-size:0.88rem;cursor:pointer;letter-spacing:.1em;backdrop-filter:blur(8px);transition:all .2s;}
 .wel-btn:hover{background:rgba(255,255,255,0.28);border-color:rgba(255,255,255,0.7);}
@@ -354,7 +354,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .mcard::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;
   background:rgba(255,255,255,0.1);border-radius:50%;}
 .mcard::after{content:'';position:absolute;bottom:-20px;left:-20px;width:80px;height:80px;
-  background:rgba(255,255,255,0.06);border-radius:50%;}
+  background:rgba(255,255,255,0.10);border-radius:50%;}
 .mcard-greeting{font-size:0.7rem;font-weight:800;color:rgba(255,255,255,0.8);
   letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px;position:relative;z-index:1;}
 .mcard-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.6rem;
@@ -365,7 +365,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 .mcard-date{font-size:0.68rem;color:rgba(255,255,255,0.65);font-weight:600;margin-top:4px;position:relative;z-index:1;}
 
 /* ── WEEK PLAN BIGGER ── */
-.wk-cell{border-radius:12px;padding:8px 4px;min-height:72px;background:#1C1C1E;cursor:pointer;
+.wk-cell{border-radius:12px;padding:8px 4px;min-height:72px;background:rgba(255,255,255,0.10);cursor:pointer;
   transition:all .18s;display:flex;flex-direction:column;align-items:center;gap:2px;
   border:1.5px solid #2A2A2A;font-size:0.6rem;font-weight:700;color:#888888;text-align:center;}
 .wk-cell:hover{border-color:#AAAAAA;background:#1A1A1A;}
@@ -621,7 +621,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <div id="quickFoods" style="display:flex;align-items:center;justify-content:space-between">
       <div class="ct" style="margin:0">常吃食物</div>
       <div style="display:flex;gap:6px">
-        <button onclick="openFoodEditMo()" style="background:#111;border:none;border-radius:8px;padding:5px 11px;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer;color:#BBBBBB">編輯</button>
+        <button onclick="openFoodEditMo()" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:5px 11px;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer;color:#FFFFFF">編輯</button>
         <button onclick="toggleSaveFoodForm()" style="background:#1A1A1A;border:none;border-radius:8px;padding:5px 11px;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer;color:#E8E0D8">＋ 新增</button>
       </div>
     </div>
@@ -784,13 +784,13 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 <!-- FOOD EDIT MODAL -->
 <div class="mo" id="foodEditMo">
-  <div class="mbox">
+  <div class="mbox" style="background:linear-gradient(160deg,#141414 0%,#1C0808 100%);border:1px solid #2A1818;">
     <div class="mtit">飲食資料庫管理</div>
     <div style="display:flex;gap:6px;margin-bottom:10px">
       <button onclick="showFoodEditTab('custom')" id="feTabCustom" class="mbtn pri" style="flex:1;font-size:0.8rem">常吃食物</button>
       <button onclick="showFoodEditTab('builtin')" id="feTabBuiltin" class="mbtn sc" style="flex:1;font-size:0.8rem">內建食物</button>
     </div>
-    <input id="feSearch" placeholder="搜尋食物名稱..." style="width:100%;border:2px solid #333;border-radius:9px;padding:8px 12px;font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;outline:none;margin-bottom:8px" oninput="filterFoodEdit(this.value)">
+    <input id="feSearch" placeholder="搜尋食物名稱..." style="width:100%;border:2px solid rgba(255,255,255,0.18);border-radius:9px;padding:8px 12px;font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:700;color:#E0E0E0;outline:none;margin-bottom:8px" oninput="filterFoodEdit(this.value)">
     <div id="foodEditList" style="max-height:55vh;overflow-y:auto;display:flex;flex-direction:column;gap:4px"></div>
     <button class="mbtn sc" onclick="closeMo('foodEditMo')" style="width:100%;margin-top:10px">關閉</button>
   </div>
@@ -821,8 +821,8 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 <div class="mo" id="shareMo" style="padding:0">
   <div style="background:linear-gradient(160deg,#5A3A8C 0%,#E63946 50%,#FF4444 100%);width:100%;max-width:400px;padding:32px 24px;border-radius:24px;position:relative;overflow:hidden;box-shadow:0 20px 60px rgba(80,50,140,0.4)" id="shareCard">
     <!-- Deco circles -->
-    <div style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:rgba(255,255,255,0.07);border-radius:50%"></div>
-    <div style="position:absolute;bottom:-30px;left:-30px;width:120px;height:120px;background:rgba(255,255,255,0.05);border-radius:50%"></div>
+    <div style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:rgba(255,255,255,0.10);border-radius:50%"></div>
+    <div style="position:absolute;bottom:-30px;left:-30px;width:120px;height:120px;background:rgba(255,255,255,0.10);border-radius:50%"></div>
     <!-- Logo -->
     <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;font-weight:300;color:rgba(255,255,255,0.6);letter-spacing:.12em;margin-bottom:16px;position:relative;z-index:1">Sovereign</div>
     <!-- User + date -->
@@ -839,7 +839,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
   </div>
   <div style="display:flex;gap:8px;padding:12px 16px;background:#fff;width:100%;max-width:400px;border-radius:0 0 24px 24px">
     <button onclick="downloadShareCard()" style="flex:1;background:linear-gradient(135deg,#E63946,#FF4444);color:#fff;border:none;border-radius:11px;padding:12px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;cursor:pointer">下載圖片</button>
-    <button onclick="closeMo('shareMo')" style="background:#1C1C1E;color:#888888;border:none;border-radius:11px;padding:12px 16px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;cursor:pointer">關閉</button>
+    <button onclick="closeMo('shareMo')" style="background:rgba(255,255,255,0.10);color:#888888;border:none;border-radius:11px;padding:12px 16px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;cursor:pointer">關閉</button>
   </div>
 </div>
 
@@ -871,7 +871,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     </div>
   </div>
   <div style="display:flex;gap:8px">
-    <button id="tutSkipBtn2" onclick="closeTutorial()" style="background:#1C1C1E;color:#888888;border:none;border-radius:11px;padding:11px 18px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.84rem;cursor:pointer">跳過</button>
+    <button id="tutSkipBtn2" onclick="closeTutorial()" style="background:rgba(255,255,255,0.10);color:#888888;border:none;border-radius:11px;padding:11px 18px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.84rem;cursor:pointer">跳過</button>
     <button id="tutNextBtn2" onclick="tutNext()" style="flex:1;background:linear-gradient(135deg,#E63946,#FF4444);color:#fff;border:none;border-radius:11px;padding:11px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.9rem;cursor:pointer">下一步 →</button>
   </div>
 </div>
@@ -887,7 +887,7 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
     <div id="tutDesc" style="font-size:0.84rem;font-weight:600;color:#888888;text-align:center;line-height:1.8;margin-bottom:24px"></div>
     <!-- Buttons -->
     <div style="display:flex;gap:8px">
-      <button id="tutSkipBtn" onclick="closeTutorial()" style="background:#1C1C1E;color:#888888;border:none;border-radius:12px;padding:13px 20px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;cursor:pointer">跳過</button>
+      <button id="tutSkipBtn" onclick="closeTutorial()" style="background:rgba(255,255,255,0.10);color:#888888;border:none;border-radius:12px;padding:13px 20px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;cursor:pointer">跳過</button>
       <button id="tutNextBtn" onclick="tutNext()" style="flex:1;background:linear-gradient(135deg,#E63946,#FF4444);color:#fff;border:none;border-radius:12px;padding:13px;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.9rem;cursor:pointer">下一步</button>
     </div>
   </div>
@@ -2190,7 +2190,7 @@ function filterFoodEdit(q){
           <span class="ftag cb">碳${f.cb}g</span>
         </div>
       </div>
-      <button onclick="startFoodItemEdit('${f._type}',${f._idx})" style="background:#111;border:none;border-radius:7px;padding:5px 10px;font-family:'Nunito',sans-serif;font-size:0.74rem;font-weight:800;cursor:pointer;color:#BBBBBB">編輯</button>
+      <button onclick="startFoodItemEdit('${f._type}',${f._idx})" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:7px;padding:5px 10px;font-family:'Nunito',sans-serif;font-size:0.74rem;font-weight:800;cursor:pointer;color:#FFFFFF">編輯</button>
       ${f._type==='custom'?`<button onclick="delFoodItem(${f._idx})" style="background:none;border:none;font-size:0.9rem;cursor:pointer;color:#E8E0D8">✕</button>`:''}
     </div>`).join(''):'<div style="text-align:center;color:#888888;font-size:0.78rem;padding:12px">沒有符合的食物</div>';
 }
@@ -2609,7 +2609,7 @@ function renderTrackHistory(){
   if(!el)return;
   if(!history.length){el.innerHTML='<div style="color:#888888;font-size:0.78rem">尚無跑步紀錄</div>';return;}
   el.innerHTML=history.slice(0,5).map(r=>`
-    <div style="background:#1C1C1E;border-radius:11px;padding:10px 12px;margin-bottom:5px;display:flex;align-items:center;gap:10px;border:1px solid #2A2A2A">
+    <div style="background:rgba(255,255,255,0.10);border-radius:11px;padding:10px 12px;margin-bottom:5px;display:flex;align-items:center;gap:10px;border:1px solid #2A2A2A">
       <div style="flex:1">
         <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">${r.dist}km</div>
         <div style="font-size:0.68rem;color:#888888;font-weight:600">${r.date}・${Math.floor(r.time/60)}分${r.time%60}秒</div>
@@ -2628,7 +2628,7 @@ function openShareCard(log){
     {v:totalKcal,l:'消耗 kcal'},
     {v:totalDur?totalDur+'分':'--',l:'訓練時長'},
     {v:totalActs,l:'訓練項目'},
-  ].map(s=>`<div style="background:rgba(255,255,255,0.14);border-radius:12px;padding:10px;text-align:center;backdrop-filter:blur(4px)">
+  ].map(s=>`<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:10px;text-align:center;backdrop-filter:blur(4px)">
     <div style="font-size:1.3rem;font-weight:900;color:#fff">${s.v}</div>
     <div style="font-size:0.6rem;font-weight:700;color:rgba(255,255,255,0.7);margin-top:2px">${s.l}</div>
   </div>`).join('');
@@ -2636,12 +2636,12 @@ function openShareCard(log){
   let sessHtml='';
   if(log?.sessions){
     log.sessions.forEach(s=>{
-      if(s.type==='aerobic')sessHtml+=`<div style="background:rgba(255,255,255,0.12);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">${s.act}${s.extra?' ('+s.extra+')':''} <span style="color:rgba(255,255,255,0.65);font-weight:600">${s.dur}分・${s.kcal}kcal</span></div>`;
-      else if(s.type==='pilates')sessHtml+=`<div style="background:rgba(255,255,255,0.12);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">皮拉提斯${s.area?' · '+s.area:''} <span style="color:rgba(255,255,255,0.65)">${s.dur}分</span></div>`;
+      if(s.type==='aerobic')sessHtml+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">${s.act}${s.extra?' ('+s.extra+')':''} <span style="color:rgba(255,255,255,0.65);font-weight:600">${s.dur}分・${s.kcal}kcal</span></div>`;
+      else if(s.type==='pilates')sessHtml+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">皮拉提斯${s.area?' · '+s.area:''} <span style="color:rgba(255,255,255,0.65)">${s.dur}分</span></div>`;
       else if(s.type==='weights'&&s.exDetails?.length)
         s.exDetails.forEach(ex=>{
           const setsStr=ex.sets?.length>0?ex.sets.map(st=>`${st.w}${typeof st.w==='number'?'kg':''}×${st.r}`).join(' '):`${ex.sc||3}組×${ex.r||12}次`;
-          sessHtml+=`<div style="background:rgba(255,255,255,0.12);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">${ex.n} <span style="color:rgba(255,255,255,0.65)">${setsStr}</span></div>`;
+          sessHtml+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:7px 11px;margin-bottom:5px;font-size:0.78rem;font-weight:700;color:#fff">${ex.n} <span style="color:rgba(255,255,255,0.65)">${setsStr}</span></div>`;
         });
     });
   }
@@ -2702,17 +2702,17 @@ function openDayCard(ds){
   let html='';
   (log.sessions||[]).forEach(s=>{
     if(s.type==='aerobic'){
-      html+=`<div style="background:#1C1C1E;border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
+      html+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
         <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">${s.act}${s.extra?' ('+s.extra+')':''}</div>
         <div style="font-size:0.68rem;color:#888888;margin-top:1px">${s.dur}分 · ${s.kcal}kcal</div>
       </div>`;
     } else if(s.type==='pilates'){
-      html+=`<div style="background:#1C1C1E;border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
+      html+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
         <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">皮拉提斯${s.area?' · '+s.area:''}</div>
         <div style="font-size:0.68rem;color:#888888;margin-top:1px">${s.dur}分 · ${s.kcal}kcal</div>
       </div>`;
     } else if(s.type==='weights'&&s.exDetails?.length){
-      html+=`<div style="background:#1C1C1E;border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
+      html+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
           <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">重訓</div>
           ${(s.cats||[]).map(c=>`<span style="background:#222222;color:#E8E0D8;border-radius:5px;padding:2px 8px;font-size:0.62rem;font-weight:800">${c}</span>`).join('')}
@@ -2723,7 +2723,7 @@ function openDayCard(ds){
       });
       html+='</div>';
     } else if(s.type==='running'){
-      html+=`<div style="background:#1C1C1E;border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
+      html+=`<div style="background:rgba(255,255,255,0.10);border-radius:9px;padding:8px 11px;margin-bottom:5px;border:1px solid #2A2A2A">
         <div style="font-size:0.8rem;font-weight:800;color:#E0E0E0">🏃 跑步 ${s.dist?s.dist.toFixed(2)+'km':''}</div>
         <div style="font-size:0.68rem;color:#888888;margin-top:1px">${s.dur}分 · ${s.kcal}kcal${s.steps?' · '+s.steps+'步':''}</div>
       </div>`;
