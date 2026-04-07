@@ -1285,7 +1285,7 @@ function init(){
       const q=CEREMONY_QUOTES[Math.floor(Math.random()*CEREMONY_QUOTES.length)];
       const textEl=document.getElementById('welCeremonyText');if(textEl)textEl.textContent=q;
       showWelStep(3);
-      setTimeout(()=>{ov.classList.add('hiding');setTimeout(()=>{ov.style.display='none';window.scrollTo(0,0);showNav();},1000);},2200);
+      setTimeout(()=>{ov.classList.add('hiding');setTimeout(()=>{ov.style.display='none';window.scrollTo(0,0);document.querySelector('.bnav').style.display='';},1000);},2200);
     },900);
   } else {
     setTimeout(welNext,800);
