@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>SurgeX</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -845,7 +845,8 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 <!-- DAY SUMMARY CARD MODAL -->
 <div class="mo" id="dayCardMo">
-  <div class="mbox" style="text-align:center;padding:24px 20px 20px;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;">
+  <div class="mbox" style="text-align:center;padding:24px 20px 20px;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;position:relative">
+  <button onclick="closeMo('dayCardMo')" style="position:absolute;top:12px;right:12px;background:rgba(255,255,255,0.1);border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;color:#E0E0E0;z-index:10">✕</button>
     <div id="dcEmoji" style="font-size:2.2rem;margin-bottom:10px">✨</div>
     <div style="font-size:0.62rem;font-weight:800;color:#888888;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">SurgeX · 训练记录</div>
     <div id="dcName" style="font-size:1.6rem;font-weight:900;color:#E0E0E0;margin-bottom:2px;line-height:1.3;letter-spacing:1px"></div>
@@ -895,7 +896,8 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 
 <!-- LEVEL UP MODAL -->
 <div class="mo" id="levelUpMo">
-  <div class="mbox" style="text-align:center;padding:28px 22px 24px;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;">
+  <div class="mbox" style="text-align:center;padding:28px 22px 24px;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;position:relative">
+  <button onclick="closeMo('levelUpMo')" style="position:absolute;top:12px;right:12px;background:rgba(255,255,255,0.1);border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;color:#E0E0E0;z-index:10">✕</button>
     <div id="lvlUpEmoji" style="font-size:3rem;margin-bottom:6px">⭐</div>
     <div style="font-size:0.65rem;font-weight:800;color:#888888;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px">Level Up!</div>
     <div id="lvlUpTitle" style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;font-style:italic;color:#E8E0D8;margin-bottom:4px;line-height:1.2"></div>
@@ -907,7 +909,8 @@ body{font-family:'Nunito',sans-serif;background:#2C2C2C;line-height:1.65;letter-
 </div>
 <!-- COMPLETION MODAL -->
 <div class="mo" id="completionMo">
-  <div class="mbox" style="text-align:center;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;">
+  <div class="mbox" style="text-align:center;background:linear-gradient(160deg,#0A0A0A 0%,#1A0808 60%,#2A0000 100%);border:1px solid #3A1010;position:relative">
+  <button onclick="closeMo('completionMo')" style="position:absolute;top:12px;right:12px;background:rgba(255,255,255,0.1);border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;color:#E0E0E0;z-index:10">✕</button>
     <div id="completionEmoji" style="font-size:3rem;margin-bottom:8px"></div>
     <div id="completionTitle" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;font-weight:300;color:#E0E0E0;margin-bottom:4px"></div>
     <div id="completionSubtitle" style="font-size:0.82rem;color:#888888;font-weight:600;margin-bottom:16px"></div>
@@ -1042,7 +1045,7 @@ const DZHT=['日','一','二','三','四','五','六'];
 // Built-in exercises
 const EX_BUILTIN={
   '肩背胸':[
-    {id:'bench',    n:'杠铃平板卧推',    m:'胸大肌・三头',       w:[20,30,40,50,60,70,80,90,100,110,120,130,140,160]},
+    {id:'bench',    n:'杠铃平板卧推',    m:'胸大肌・三头',       w:[20,30,40,50,60,70,80,90,100,110,120,130,140,160,180,200]},
     {id:'incsmith', n:'上斜史密斯卧推',  m:'胸大肌上束',         w:[20,30,40,50,60,70,80,90,100,110,120]},
     {id:'chestpr',  n:'胸推',            m:'胸大肌',             w:[20,30,40,50,60,70,80,100,120,140,160]},
     {id:'shpress',  n:'肩推',            m:'三角肌前・中束',      w:[10,15,20,30,40,50,60,70,80,90,100]},
@@ -1061,14 +1064,14 @@ const EX_BUILTIN={
   ],
   '臀腿':[
     {id:'bulgarian',n:'保加利亚深蹲',   m:'股四头・臀大肌',     w:['自体',4,6,8,10,12,14,16,18,20,24,28,32,40,50]},
-    {id:'barsquat', n:'负重深蹲',       m:'股四头・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140,160,180]},
+    {id:'barsquat', n:'负重深蹲',       m:'股四头・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140,160,180,200]},
     {id:'rdl',      n:'罗马尼亚硬举',   m:'腘绳肌・臀大肌',     w:[20,30,40,50,60,70,80,90,100,110,120,140]},
     {id:'legpress', n:'倒蹬',           m:'股四头・臀大肌',     w:[30,50,60,80,100,120,140,160,180,200,220,250]},
     {id:'legcurl',  n:'附身勾腿',       m:'腘绳肌',             w:[10,15,20,25,30,35,40,50,60,70]},
     {id:'hangleg',  n:'悬垂举腿',       m:'下腹・髂腰肌',       w:['自体']},
     {id:'kbswing',  n:'甩壶铃',         m:'臀大肌・腘绳肌・核心',w:[6,8,10,12,14,16,18,20,24,28,32,36,40]},
     {id:'singlekb', n:'单腿壶铃硬拉',  m:'臀大肌・腘绳肌',     w:[6,8,10,12,14,16,18,20,24,28,32,36]},
-    {id:'barthrust',n:'杠铃臀推',       m:'臀大肌',             w:[20,30,40,50,60,70,80,100,120,140,160,180]},
+    {id:'barthrust',n:'杠铃臀推',       m:'臀大肌',             w:[20,30,40,50,60,70,80,100,120,140,160,180,200]},
     {id:'goatback', n:'山羊挺身',       m:'豎脊肌・臀大肌',     w:['自体',4,6,8,10,12,14,16,18,20,22,24,26,28,30]},
   ],
   '核心':[
@@ -1272,10 +1275,19 @@ function init(){
   }
 
   // ── Welcome ceremony ──
-  if(!S.name){
-    const ov=document.getElementById('welcomeOverlay');
-    if(ov){ov.style.display='flex';ov.classList.remove('hiding');showWelStep(1);}
-    setTimeout(welNext,800); // Step1 splash for 1 second
+  const ov=document.getElementById('welcomeOverlay');
+  if(ov){ov.style.display='flex';ov.classList.remove('hiding');showWelStep(1);}
+  if(S.name){
+    setTimeout(()=>{
+      const revealEl=document.getElementById('welNameReveal');
+      if(revealEl){const fs=S.name.length<=4?'4.5rem':S.name.length<=6?'3.8rem':S.name.length<=8?'3.2rem':'2.6rem';revealEl.style.fontSize=fs;revealEl.textContent=S.name;}
+      const q=CEREMONY_QUOTES[Math.floor(Math.random()*CEREMONY_QUOTES.length)];
+      const textEl=document.getElementById('welCeremonyText');if(textEl)textEl.textContent=q;
+      showWelStep(3);
+      setTimeout(()=>{ov.classList.add('hiding');setTimeout(()=>{ov.style.display='none';window.scrollTo(0,0);},1000);},2200);
+    },900);
+  } else {
+    setTimeout(welNext,800);
   }
   document.getElementById('welNameInput')?.addEventListener('keydown',e=>{if(e.key==='Enter')welcomeSubmit();});
 }
@@ -2388,6 +2400,8 @@ function buildTodoItems(ds,log,plan){
   return items;
 }
 function deletePlanItem(ds,idx){
+  const log=S.logs.find(l=>l.date===ds);
+  if(log?.sessions){log.sessions.splice(idx,1);log.acts=[...new Set(log.sessions.map(s=>s.act||'').filter(Boolean))];sd('logs',S.logs);}
   const plan=S.weekPlan[ds];if(!plan)return;
   if(plan.sessions?.length>idx)plan.sessions.splice(idx,1);
   else if(plan.acts?.length>idx)plan.acts.splice(idx,1);
@@ -2875,6 +2889,7 @@ function tutNext(){
 }
 
 function closeTutorial(){
+  window.scrollTo(0,0);
   document.getElementById('tutOverlay').style.display='none';
   document.getElementById('tutTooltip').style.display='none';
   if(tutHighlightEl){tutHighlightEl.classList.remove('tut-highlight');tutHighlightEl=null;}
